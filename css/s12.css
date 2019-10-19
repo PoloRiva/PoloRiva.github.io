@@ -1,0 +1,57 @@
+/*
+html { 
+  background:  url(https://media.giphy.com/media/3Ou0yepkgVwR6qxLFX/giphy.gif) no-repeat center center fixed; 
+  background-size: cover;
+}*/
+
+.redColor {
+	color: #eb5834;
+}
+
+.yellowColor {
+	color: #eb9634;
+}
+
+.skyColor {
+	color: #0335fc;
+}
+
+h3 {
+	font-style: italic;
+	font: Georgia, serif;
+}
+
+body {
+  background: white url(https://cdn131.picsart.com/296807949142211.png) 0px 0px/350px 350px;
+  /*width: 50%;*/
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px -150px; }
+}
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 200px;
+  	align: center;
+	/* margin-left:40%; */
+}
+td, th {
+	border: 1px;
+	padding: 3px;
+	text-align: center;
+}
+
+form {
+	background-color: #ffc0cb;
+	border: 2px solid #ee93a3;
+	padding: 10px;
+}
