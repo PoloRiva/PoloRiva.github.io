@@ -6,15 +6,6 @@ body {
 #fakeHeader {
     padding: 20px;
 }
-
-.sidebar-outer {
-  margin-top: 150px;
-  position: relative;
-}
-.fixed {
-  position: fixed;
-}
-
   
   @-webkit-keyframes slide {
       from { background-position: 0 0; }
