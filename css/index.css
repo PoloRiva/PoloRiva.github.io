@@ -6,6 +6,10 @@ body {
 #fakeHeader {
     padding: 20px;
 }
+
+.container-fluid {
+    background: yellow;
+}
   
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
