@@ -1,6 +1,6 @@
 body {
     background: white url(../pic/bg/funky-lines.png) 0px 0px/350px 350px;
-    -webkit-animation: slide 45s linear infinite;
+    animation: slide 45s linear infinite;
   }
 
 #fakeHeader {
@@ -11,7 +11,12 @@ body {
     background: yellow;
 }
   
-@-webkit-keyframes slide {
+/* @-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 400px; }
+} */
+
+@keyframes slide {
     from { background-position: 0 0; }
     to { background-position: -400px 400px; }
 }
