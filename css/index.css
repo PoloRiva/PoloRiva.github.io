@@ -1,7 +1,7 @@
 body {
     background: white url(../pic/bg/funky-lines.png) 0px 0px/350px 350px;
     animation: slide 45s linear infinite;
-  }
+}
 
 #fakeHeader {
     padding: 20px;
@@ -10,13 +10,29 @@ body {
 .container-fluid {
     background: yellow;
 }
-  
-/* @-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 400px; }
-} */
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    transform: translateY(50px);
+    transition:.5s ease all;
+}
+
+.dropdown-menu.show {
+    display: block;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: 3s ease all;
+    animation: fadein .5s ease-out 1 normal forwards;
+}
 
 @keyframes slide {
     from { background-position: 0 0; }
     to { background-position: -400px 400px; }
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to {opacity: 1;}
 }
