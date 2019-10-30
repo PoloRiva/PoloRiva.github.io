@@ -18,7 +18,7 @@ body {
     transform: translateY(5px);
     transition:.5s ease all;
     position: relative;
-    float: ;
+    float: none;
 }
 
 .dropdown-menu.show {
