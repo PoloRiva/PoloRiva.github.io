@@ -7,28 +7,29 @@ body {
     padding: 20px;
 }
 
+.navbar {
+    background: #e3f2fd;
+}
+
 .container-fluid {
-    background: yellow;
+    background: #e3f2fd;;
 }
 
 .dropdown-menu {
     display: block;
     visibility: hidden;
     opacity:0;
-    transform: translateY(5px);
+    transform: translateY(100px);
     transition:.5s ease all;
-    position: relative;
-    float: none;
 }
 
 .dropdown-menu.show {
     display: block;
     visibility: visible;
     transform: translateY(0px);
-    transition: .3s ease-out all;
     animation: fadein .3s ease-out 1 normal forwards;
     position: relative;
-    float: none;
+    float: none !important;
 }
 
 @keyframes slide {

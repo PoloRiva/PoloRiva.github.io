@@ -1,3 +1,7 @@
-$(function() {
-    $("#nav-placeholder").load("navbar.html");
-});
+// $(function() {
+//     $("#nav-placeholder").load("navbar.html");
+// });
+
+// window.onscroll = function() {
+//     console.log('Hi');
+// }
