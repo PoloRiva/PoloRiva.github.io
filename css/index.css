@@ -15,16 +15,20 @@ body {
     display: block;
     visibility: hidden;
     opacity:0;
-    transform: translateY(50px);
+    transform: translateY(5px);
     transition:.5s ease all;
+    position: relative;
+    float: ;
 }
 
 .dropdown-menu.show {
     display: block;
     visibility: visible;
     transform: translateY(0px);
-    transition: 3s ease all;
-    animation: fadein .5s ease-out 1 normal forwards;
+    transition: .3s ease-out all;
+    animation: fadein .3s ease-out 1 normal forwards;
+    position: relative;
+    float: none;
 }
 
 @keyframes slide {
