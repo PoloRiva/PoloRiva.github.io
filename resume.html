@@ -18,163 +18,202 @@
 
 </head>
 <body>
-    <h1 id="fakeHeader" style="text-align: center;">Paolo Francesco Riva Riquelme</h1>
 
-    <nav id="navbar" class="navbar navbar-expand-sm navbar-light border border-dark" style="background-color: #e3f2fd;">
-        <div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
-                </li>
+<h1 id="fakeHeader" style="text-align: center;">Paolo Francesco Riva Riquelme</h1>
+
+<nav id="navbar" class="navbar navbar-expand-sm navbar-light border border-dark" style="background-color: #e3f2fd;">
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <h2>Skills</h2> <!-- TODO: Add a hover js that change the image at the right -->
+            <ul>
+                <li>Steady State Simulations (ProII, Hysys, UniSim)</li>
+                <li>Dynamic Simulations (DynSim)</li>
+                <li>CFD Simulations (ANSYS Fluent)</li>
+                <li>Design and Optimization of Chemical Processes</li>
+                <li>P&ID and PFDs</li>
+                <li>Statics, DoE and Data Analysis</li>
+                <li>PID and Model Predictive Control Systems</li>
+                <li>Economic Assessment of Processes</li>
+                <li>Life Cycle Assessment</li>
+                <li>Product Formulation</li>
+                <li>ASTM Standardized Tests</li>
             </ul>
         </div>
-    </nav>
-    <br />
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <h2>Skills</h2> <!-- TODO: Add a hover js that change the image at the right -->
-                <ul>
-                    <li>Steady State Simulations (ProII, Hysys, UniSim)</li>
-                    <li>Dynamic Simulations (DynSim)</li>
-                    <li>CFD Simulations (ANSYS Fluent)</li>
-                    <li>Design and Optimization of Chemical Processes</li>
-                    <li>P&ID and PFDs</li>
-                    <li>Statics, DoE and Data Analysis</li>
-                    <li>PID and Model Predictive Control Systems</li>
-                    <li>Economic Assessment of Processes</li>
-                    <li>Life Cycle Assessment</li>
-                    <li>Product Formulation</li>
-                    <li>ASTM Standardized Tests</li>
-                </ul>
+        <div class="col-4">
+            <div style="background-color: white; padding: 2px;">
+                <img src="./pic/profilePicture.png" class="img-fluid">
             </div>
-            <div class="col-4">
-                <div style="background-color: white; padding: 2px;">
-                    <img src="./pic/profilePicture.png" class="img-fluid">
-                </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container-fluid">
+        <h2>Education</h2> <!-- TODO: Add a hover js that change the image at the right -->
+    <div class="row">
+        <div class="col-12 col-md-10">
+            <ul>
+                <h3>Politecnico di Milano</h3>
+                <h4>Master of Science in Chemical Engineering</h4>
+                <h5><u>Thesis</u>: <i>"Study of the kinetics for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts"</i></h5>
+            </ul>
+        </div>
+        <div class="col-3 col-md-2" style="padding: 6px;">
+            <div style="padding: 2px;">
+                <img src="pic/Logo_Politecnico_Milano.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-10">
+            <ul>
+                <h3>Universidad de Concepción</h3>
+                <h4>Bachelor in Chemical Civil Engineering</h4>
+                <h5><u>Thesis</u>: <i>"Polyurethane intumescent coating formulation based on tannins from Pinus Radiata"</i></h5>
+            </ul>
+        </div>
+        <div class="col-3 col-md-2" style="padding: 6px;">
+            <div style="padding: 2px;">
+                <img src="pic/marcaderecha.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="container-fluid bg-transparent border border-dark">
+    <!-- TODO: add "read more" dropdown smooth menu to show description, picture, references, etc -->
+    <!-- https://bootsnipp.com/snippets/gNQz7 -->
+    <h2>Work Experience</h2>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="row shadow bg-white rounded" data-toggle="collapse" href="#AccentureCollapse" style="cursor: pointer;" >
+        <div class="col-12 col-sm-7">
+            <ul>
+                <h4><b>Accenture</b></h4>
+                <h4>Technology Trainee</h4>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-5">
+            <ul>
+                <h5>September 2019 - April 2019</h5>
+                <h5>Milan, Italy</h5>
+            </ul>
+        </div>
+    </div>
+    <div class="collapse container-fluid" id="AccentureCollapse" style="background: #e3f2fd;">
+        <div class="row">
+            <div class="col-12 col-sm-8">
+                <h6><u>Description</u>:</h6>
+                <p style="margin-left: .5em"> TODO: ???</p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <p>references:</p>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------- -->
+    <br />
+    <div class="row shadow bg-white rounded" data-toggle="collapse" href="#EnetEnergyCollapse" style="cursor: pointer;" >
+        <div class="col-12 col-sm-7">
+            <ul>
+                <h4><b>Enet Energy SA</b></h4>
+                <h4>Trainee on quantitative analyst and strategy on natural gas markets</h4>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-5">
+            <ul>
+                <h5>June 2019 - July 2019</h5>
+                <h5>Lugano, Switzerland</h5>
+            </ul>
+        </div>
+    </div>
+    <div class="collapse container-fluid" id="EnetEnergyCollapse" style="background: #e3f2fd;">
+        <div class="row">
+            <div class="col-12 col-sm-8">
+                <h6><u>Description</u>:</h6>
+                <p style="margin-left: .5em"> I was in charge of making software tools to accelerate the workflow inside the office and to facilitate the decision making for short and long trading</p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <p>references:</p>
             </div>
         </div>
     </div>
     <br />
-    <div class="container-fluid">
-            <h2>Education</h2> <!-- TODO: Add a hover js that change the image at the right -->
-        <div class="row">
-            <div class="col-12 col-md-10">
-                <ul>
-                    <h3>Politecnico di Milano</h3>
-                    <h4>Master of Science in Chemical Engineering</h4>
-                    <h5><u>Thesis</u>: <i>"Study of the kinetics for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts"</i></h5>
-                </ul>
-            </div>
-            <div class="col-3 col-md-2" style="padding: 6px;">
-                <div style="padding: 2px;">
-                    <img src="pic/Logo_Politecnico_Milano.png" class="img-fluid">
-                </div>
-            </div>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="row shadow bg-white rounded" data-toggle="collapse" href="#UdeC2Collapse" style="cursor: pointer;" >
+        <div class="col-12 col-sm-7">
+            <ul>
+                <h4><b>Universidad de Concepión</b></h4>
+                <h4>Product Formulation Researcher</h4>
+            </ul>
         </div>
+        <div class="col-12 col-sm-5">
+            <ul>
+                <h5>November 2016 - March 2017</h5>
+                <h5>Concepción, Chile</h5>
+            </ul>
+        </div>
+    </div>
+    <div class="collapse container-fluid" id="UdeC2Collapse" style="background: #e3f2fd;">
         <div class="row">
-            <div class="col-12 col-md-10">
-                <ul>
-                    <h3>Universidad de Concepción</h3>
-                    <h4>Bachelor in Chemical Civil Engineering</h4>
-                    <h5><u>Thesis</u>: <i>"Polyurethane intumescent coating formulation based on tannins from Pinus Radiata"</i></h5>
-                </ul>
+            <div class="col-12 col-sm-8">
+                <h6><u>Description</u>:</h6>
+                <p style="margin-left: .5em"> I was the lead researcher on the formulation of intumescent Polyurethane for different types of applications (paint, foam, spray)</p>
             </div>
-            <div class="col-3 col-md-2" style="padding: 6px;">
-                <div style="padding: 2px;">
-                    <img src="pic/marcaderecha.png" class="img-fluid">
-                </div>
+            <div class="col-12 col-sm-4">
+                <p>references:</p>
             </div>
         </div>
     </div>
+    <!-- ------------------------------------------------------------------- -->
     <br />
-    <div class="container-fluid bg-transparent border border-dark">
-        <!-- TODO: add "read more" dropdown smooth menu to show description, picture, references, etc -->
-        <!-- https://bootsnipp.com/snippets/gNQz7 -->
-        <h2>Work Experience</h2>
-        <!-- ------------------------------------------------------------------- -->
-        <div class="row shadow bg-white rounded dropdown" data-toggle="dropdown" style="cursor: pointer; z-index: 2;" >
-            <div class="col-12 col-sm-7">
-                <ul id="AccentureId">
-                    <h4><b>Accenture</b></h4>
-                    <h4>Technology Trainee</h4>
-                </ul>
-            </div>
-            <div class="col-12 col-sm-5">
-                <ul>
-                    <h5>September 2019 - April 2019</h5>
-                    <h5>Milan, Italy</h5>
-                </ul>
-            </div>
+    <div class="row shadow bg-white rounded" data-toggle="collapse" href="#UdeC1Collapse" style="cursor: pointer;" >
+        <div class="col-12 col-sm-7">
+            <ul>
+                <h4><b>Universidad de Concepión</b></h4>
+                <h4>Undergraduate Research Assistant</h4>
+            </ul>
         </div>
-        <div class="dropdown-menu container-fluid" style="z-index: 1;">
-            <div class="row">
-                <div class="col-12 col-sm-8">
-                    <h6><u>Description</u>:</h6>
-                    <p style="margin-left: .5em"> I was in charge of making software tools to accelerate the workflow inside the office and to facilitate the decision making for short and long trading</p>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <p>references:</p>
-                </div>
-            </div>
+        <div class="col-12 col-sm-5">
+            <ul>
+                <h5>March 2016 - August 2016</h5>
+                <h5>Concepción, Chile</h5>
+            </ul>
         </div>
-        <!-- ------------------------------------------------------------------- -->
-        <br />
-        <div class="row shadow bg-white rounded" >
-            <div class="col-7">
-                <ul>
-                    <h4><b>Enet Energy SA</b></h4>
-                    <h4>Trainee on quantitative analyst and strategy on natural gas markets</h4>
-                </ul>
+    </div>
+    <div class="collapse container-fluid" id="UdeC1Collapse" style="background: #e3f2fd;">
+        <div class="row">
+            <div class="col-12 col-sm-8">
+                <h6><u>Description</u>:</h6>
+                <p style="margin-left: .5em"> While working on my thesis for the formulation of intumescent Polyurethane to be applied as a paint, I accidentally discovered an easy way to produce Polyurethane to be applied as a foam. My university decided to hire me to work on this project parallel to my thesis work</p>
             </div>
-            <div class="col-5">
-                <ul>
-                    <h5>September 2019 - April 2019</h5>
-                    <h5>Lugano, Switzerland</h5>
-                </ul>
-            </div>
-        </div>
-        <br />
-        <div class="row shadow bg-white rounded" >
-                <div class="col-7">
-                <ul>
-                    <h4><b>Universidad de Concepción</b></h4>
-                    <h4>Product Formulation Researcher</h4>
-                </ul>
-            </div>
-            <div class="col-5">
-                <ul>
-                    <h5>November 2016 - March 2017</h5>
-                    <h5>Concepción, Chile</h5>
-                </ul>
-            </div>
-        </div>
-        <br />
-        <div class="row shadow bg-white rounded" >
-            <div class="col-7">
-                <ul>
-                    <h4><b>Universidad de Concepción</b></h4>
-                    <h4>Undergraduate Research Assistant</h4>
-                </ul>
-            </div>
-            <div class="col-5">
-                <ul>
-                    <h5>March 2016 - August 2016</h5>
-                    <h5>Concepción, Chile</h5>
-                </ul>
+            <div class="col-12 col-sm-4">
+                <p>references:</p>
             </div>
         </div>
     </div>
-    <br /><br /><br /><br /><br /><br /><br />
-    <a href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV"><i class="fas fa-file-download"></i> Download CV <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+    <!-- ------------------------------------------------------------------- -->
+    <br />
+</div>
+<br /><br /><br /><br /><br /><br /><br />
+<a href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV"><i class="fas fa-file-download"></i> Download CV <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
 
-    <!-- TODO: Add a footer with link to Linked-in | Github | etc -->
+<!-- TODO: Add a footer with link to Linked-in | Github | etc -->
+
 </body>
 
 </html>
