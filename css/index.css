@@ -25,11 +25,7 @@ body {
     to {opacity: 1;}
 }
 
-.row h5 {
-    text-align: right;
-}
-
-/* summamry of refrence sintax for css
+/* summary of refrence sintax for css
 #:      id
 .:      class
 (tag):  tag
