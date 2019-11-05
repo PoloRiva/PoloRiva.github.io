@@ -38,19 +38,16 @@
 </nav>
 <br>
 <!-- TODO: add a Accordion collapse structure to show the different skills: Chemical Engineering, Computer, Laboratory -->
+<!-- HERE IS OK -->
 <div class="container-fluid" style="padding: 10px;">
     <h2>Skills</h2>
-    <div class="accordion" id="accordionSkills">
+    <div class="accordion rounded" id="accordionSkills">
         <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Chemical Engineering Skills
-                    </button>
-                </h2>
+            <div class="card-header rounded border border-dark" style="background: white;" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Chemical Engineering Skills</h5>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSkills">
-                <div class="card-body">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 10px; padding-bottom: 1px;">
                     <ul>
                         <li>Steady State Simulations (ProII, Hysys, UniSim)</li>
                         <li>Dynamic Simulations (DynSim)</li>
@@ -61,21 +58,16 @@
                         <li>PID and Model Predictive Control Systems</li>
                         <li>Economic Assessment of Processes</li>
                         <li>Life Cycle Assessment</li>
-                        <li>Product Formulation</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Computer Skills
-                    </button>
-                </h2>
-            </div>
+                <div class="card-header rounded border border-dark shadow" style="background: white;" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <h5>Computer Skills</h5>
+                </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSkills">
-                <div class="card-body">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 10px; padding-bottom: 1px;">
                     <ul>
                         <li>Office Package (Word, Excel, PowerPoint, Visio, Access)</li>
                         <li>Programming Knowledge (MATLAB, C++, Java)</li>
@@ -90,28 +82,26 @@
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Laboratory Skills
-                    </button>
-                </h2>
+        <div class="card"  style="padding-bottom: 1px;">
+            <div class="card-header rounded border border-dark" style="background: white;" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <h5>Laboratory Skills</h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSkills">
-                <div class="card-body">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 10px; padding-bottom: 1px;">
                     <!-- TODO: add a background image (maybe) -->
                     <ul>
                         <li>ASTM Standardized Tests</li>
+                        <li>Product Formulation</li>
+                        <li>NMR</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<br>
 <!-- ------------------------------------------------------------------- -->
 <!-- TODO: add courses taken as a collapse button -->
+<hr>
 <div class="container-fluid">
     <h2>Education</h2> <!-- TODO: Add a hover js that change the image at the right -->
     <div class="row">
@@ -143,12 +133,12 @@
         </div>
     </div>
 </div>
-<br>
-<div class="container-fluid bg-transparent border border-dark">
+<hr>
+<!-- ------------------------------------------------------------------- -->
+<div class="container-fluid bg-transparent">
     <!-- TODO: add "read more" dropdown smooth menu to show description, picture, references, etc -->
     <h2>Work Experience</h2>
-    <!-- ------------------------------------------------------------------- -->
-    <div class="bg-white shadow rounded" style="cursor: pointer;" id="Accenture" data-toggle="collapse" href="#AccentureCollapse">
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="Accenture" data-toggle="collapse" href="#AccentureCollapse">
         <div class="row">
             <div class="col-12 col-sm-6" style="text-align: left;">
                 <h4 style="padding-left: 5px;"><b>Accenture</b></h4>
@@ -166,15 +156,15 @@
     <div class="collapse" id="AccentureCollapse">
         <br>
     </div>
-    <div class="collapse container-fluid rounded" id="AccentureCollapse" style="background: #e3f2fd; padding: 10px;">
+    <div class="collapse container-fluid rounded border border-dark" id="AccentureCollapse" style="background: #e3f2fd; padding: 10px;">
         <div class="row">
                 <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
                     <h6><u>Description</u>:</h6>
-                <p style="margin-left: .5em"> TODO: ???</p>
+                <h5 style="margin-left: .5em"> TODO: ???</h5>
             </div>
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
                 <h6><u>Reference</u>:</h6>
-                <div class="card" style="text-align: center; padding: 10px;">
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
                     <!-- TODO: add professor picture -->
                     <img class="rounded" src="https://media.licdn.com/dms/image/C5603AQEJPPxwRm5izA/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=cm4BZ9IaV89IUJZGoXt3BANmkgpBu8JEWueZZspN0DI" alt="John" style="width: 100%;">
                     <h5>Emanuele Galli</h5>
@@ -192,7 +182,7 @@
     </div>
     <br>
     <!-- ------------------------------------------------------------------- -->
-    <div class="bg-white shadow rounded" style="cursor: pointer;" id="EnetEnergySA" data-toggle="collapse" href="#EnetEnergySACollapse">
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="EnetEnergySA" data-toggle="collapse" href="#EnetEnergySACollapse">
         <div class="row">
             <div class="col-12 col-sm-7" style="text-align: left;">
                 <h4 style="padding-left: 5px;"><b>Enet Energy SA</b></h4>
@@ -210,15 +200,15 @@
     <div class="collapse" id="EnetEnergySACollapse">
         <br>
     </div>
-    <div class="collapse container-fluid rounded" id="EnetEnergySACollapse" style="background: #e3f2fd; padding: 10px;">
+    <div class="collapse container-fluid rounded border border-dark" id="EnetEnergySACollapse" style="background: #e3f2fd; padding: 10px;">
         <div class="row">
             <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
                 <h6><u>Description</u>:</h6>
-                <p style="margin-left: .5em">I was in charge of making software tools to accelerate the workflow inside the office and to make easy the decision making for short and long trading</p>
+                <h5 style="margin-left: .5em">I was in charge of making software tools to accelerate the workflow inside the office and to make easy the decision making for short and long trading</h5>
             </div>
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
-                <h6><u>References</u>:</h6>
-                <div class="card" style="text-align: center; padding: 10px;">
+                <h6><u>Reference</u>:</h6>
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
                     <!-- TODO: add professor picture -->
                     <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQEhq8-yu7QcYg/profile-displayphoto-shrink_800_800/0?e=1578528000&v=beta&t=5iyGoRaxutnsefRHJwyCIbItpFFKovFXYIfWszkWL_Q" alt="John" style="width: 100%;">
                     <h5>Roberto Dalla Muta</h5>
@@ -235,7 +225,7 @@
     </div>
     <br>
     <!-- ------------------------------------------------------------------- -->
-    <div class="bg-white shadow rounded" style="cursor: pointer;" id="UdeC2" data-toggle="collapse" href="#UdeC2Collapse">
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="UdeC2" data-toggle="collapse" href="#UdeC2Collapse">
         <div class="row">
             <div class="col-12 col-sm-7" style="text-align: left;">
                 <h4 style="padding-left: 5px;"><b>Universidad de Concepción</b></h4>
@@ -253,7 +243,7 @@
     <div class="collapse" id="UdeC2Collapse">
         <br>
     </div>
-    <div class="collapse container-fluid rounded" id="UdeC2Collapse" style="background: #e3f2fd; padding: 10px;">
+    <div class="collapse container-fluid rounded border border-dark" id="UdeC2Collapse" style="background: #e3f2fd; padding: 10px;">
         <div class="row">
                 <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
                     <h6><u>Description</u>:</h6>
@@ -261,7 +251,7 @@
             </div>
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
                 <h6><u>Reference</u>:</h6>
-                <div class="card" style="text-align: center; padding: 10px;">
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
                     <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="John" style="width: 100%;">
                     <h5>Katherina Fernandez</h5>
                     <p class="title">Associate Professor</p>
@@ -277,7 +267,7 @@
     </div>
     <br>
     <!-- ------------------------------------------------------------------- -->
-    <div class="bg-white shadow rounded" style="cursor: pointer;" id="UdeC1" data-toggle="collapse" href="#UdeC1Collapse">
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="UdeC1" data-toggle="collapse" href="#UdeC1Collapse">
         <div class="row">
             <div class="col-12 col-sm-7" style="text-align: left;">
                 <h4 style="padding-left: 5px;"><b>Universidad de Concepción</b></h4>
@@ -295,16 +285,16 @@
     <div class="collapse" id="UdeC1Collapse">
         <br>
     </div>
-    <div class="collapse container-fluid rounded" id="UdeC1Collapse" style="background: #e3f2fd; padding: 10px;">
+    <div class="collapse container-fluid rounded border border-dark" id="UdeC1Collapse" style="background: #e3f2fd; padding: 10px;">
         <div class="row">
                 <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
                     <h6><u>Description</u>:</h6>
-                <p style="margin-left: .5em">While working on my thesis for the formulation of intumescent Polyurethane to be applied as paint, I accidentally discovered an easy way to produce Polyurethane to be applied as a foam. My university decided to hire me to work on this project parallel to my thesis work</p>
+                <h5 style="margin-left: .5em">While working on my thesis for the formulation of intumescent Polyurethane to be applied as paint, I accidentally discovered an easy way to produce Polyurethane to be applied as a foam. My university decided to hire me to work on this project parallel to my thesis work</h5>
             </div>
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
                 <h6><u>Reference</u>:</h6>
                 <!-- ------------------------------------------------------------------- -->
-                <div class="card" style="text-align: center; padding: 10px;">
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
                     <!-- TODO: change alternative picture in case linked changes the URL -->
                     <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="John" style="width: 100%;">
                     <h5>Katherina Fernandez</h5>
@@ -316,18 +306,12 @@
                         <a class="col" href="mailto:kfernandeze@udec.cl"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
                     </div>
                 </div>
-                <!-- ------------------------------------------------------------------- -->
-                <!-- 
-                <h6><b>Katherina Fernandez Elgueta</b></h6>
-                <h6>Associate professor</h6>
-                <a href="http://www.linkedin.com/in/katherina-fernandez-elgueta-380b8335"><img src="./pic/Logo_Politecnico_Milano.png" alt="#"></a>
-                <h6>Phone: +56959113912 <a href="tel:+56959113912">Call</a></h6> -->
             </div>
         </div>
     </div>
-    <br>
-    <!-- ------------------------------------------------------------------- -->
 </div>
+<!-- ------------------------------------------------------------------- -->
+<hr>
 <div class="container-fluid">
     <h2>Languages</h2>
         <li>English</li>
