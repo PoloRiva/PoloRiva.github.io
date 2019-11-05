@@ -38,8 +38,6 @@
 </nav>
 <br>
 <!-- TODO: add a Accordion collapse structure to show the different skills: Chemical Engineering, Computer, Laboratory -->
-
-<!-- ------------------------------------------------------------------- -->
 <div class="container-fluid" style="padding: 10px;">
     <h2>Skills</h2>
     <div class="accordion" id="accordionSkills">
@@ -51,9 +49,8 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-target="#accordionSkills">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSkills">
                 <div class="card-body">
-                    <!-- TODO: add a background image (maybe) -->
                     <ul>
                         <li>Steady State Simulations (ProII, Hysys, UniSim)</li>
                         <li>Dynamic Simulations (DynSim)</li>
@@ -77,9 +74,8 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-target="#accordionSkills">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSkills">
                 <div class="card-body">
-                    <!-- TODO: add a background image (maybe) -->
                     <ul>
                         <li>Office Package (Word, Excel, PowerPoint, Visio, Access)</li>
                         <li>Programming Knowledge (MATLAB, C++, Java)</li>
@@ -102,7 +98,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-target="#accordionSkills">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSkills">
                 <div class="card-body">
                     <!-- TODO: add a background image (maybe) -->
                     <ul>
@@ -176,11 +172,11 @@
                 <h6><u>Description</u>:</h6>
                 <p style="margin-left: .5em"> TODO: ???</p>
             </div>
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-sm-4" style="align-content: center;">
                 <h6><u>References</u>:</h6>
                 <div class="card" style="text-align: center; padding: 10px;">
                     <!-- TODO: add professor picture -->
-                    <img src="./pic/profilePicture.png" alt="John" style="width: 100%;">
+                    <img class="rounded" src="https://media.licdn.com/dms/image/C5603AQEJPPxwRm5izA/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=cm4BZ9IaV89IUJZGoXt3BANmkgpBu8JEWueZZspN0DI" alt="John" style="width: 100%;">
                     <h5>Emanuele Galli</h5>
                     <p class="title">Senior Software Developer</p>
                     <p>Accenture</p>
@@ -216,24 +212,22 @@
     </div>
     <div class="collapse container-fluid rounded" id="EnetEnergySACollapse" style="background: #e3f2fd; padding: 10px;">
         <div class="row">
-            <div class="col-12 col-sm-8">
+            <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
                 <h6><u>Description</u>:</h6>
                 <p style="margin-left: .5em">I was in charge of making software tools to accelerate the workflow inside the office and to make easy the decision making for short and long trading</p>
             </div>
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6">
                 <h6><u>References</u>:</h6>
                 <div class="card" style="text-align: center; padding: 10px;">
                     <!-- TODO: add professor picture -->
-                    <img src="./pic/profilePicture.png" alt="John" style="width: 100%;">
+                    <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQEhq8-yu7QcYg/profile-displayphoto-shrink_800_800/0?e=1578528000&v=beta&t=5iyGoRaxutnsefRHJwyCIbItpFFKovFXYIfWszkWL_Q" alt="John" style="width: 100%;">
                     <h5>Roberto Dalla Muta</h5>
                     <p class="title">Natural Gas Trader</p>
                     <p>Enet Energy SA</p>
                     <div class="row">
-                        <div class="col"></div>
                         <a class="col" href="http://www.linkedin.com/in/katherina-fernandez-elgueta-380b8335"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
                         <a class="col" href="tel:+41795509427"><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></a>
                         <a class="col" href="mailto:roberto.dallamuta@gmail.com"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
-                        <div class="col"></div>
                     </div>
                 </div>
             </div>
@@ -270,7 +264,7 @@
                 <h6><u>References</u>:</h6>
                 <div class="card" style="text-align: center; padding: 10px;">
                     <!-- TODO: add professor picture -->
-                    <img src="./pic/profilePicture.png" alt="John" style="width: 100%;">
+                    <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="John" style="width: 100%;">
                     <h5>Katherina Fernandez</h5>
                     <p class="title">Associate Professor</p>
                     <p>Universidad de Concepcion</p>
@@ -316,8 +310,8 @@
                 <h6><u>References</u>:</h6>
                     <!-- ------------------------------------------------------------------- -->
                     <div class="card" style="text-align: center; padding: 10px;">
-                        <!-- TODO: add professor picture -->
-                        <img src="./pic/profilePicture.png" alt="John" style="width: 100%;">
+                        <!-- TODO: change alternative picture in case linked changes the URL -->
+                        <img class="rounded" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="John" style="width: 100%;">
                         <h5>Katherina Fernandez</h5>
                         <p class="title">Associate Professor</p>
                         <p>Universidad de Concepcion</p>
