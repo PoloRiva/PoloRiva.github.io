@@ -48,6 +48,7 @@ hr {
 #myBtn:hover {
     background-color: aqua;
 }
+
 /* ---------- For the background ---------- */
     @keyframes slide {
         from { background-position: 0 0; }
