@@ -13,3 +13,16 @@
 //     console.log('Hi');
 // }
 
+$(document).ready(function () {
+    var url = window.location;
+    var pos = window.p
+    $('ul.navbar-nav a[href=' + url + '"]').parent().addClass('active');
+    $('ul.navbar-nav a').filter(function() {
+        return this.href == url;
+    }).parent.addClass('active');
+});
+
+// $( '#topheader .navbar-nav a' ).on( 'click', function () {
+// 	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+// 	$( this ).parent( 'li' ).addClass( 'active' );
+// });
