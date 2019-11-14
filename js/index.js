@@ -28,14 +28,39 @@ function topFunction() {
 // ---------- For the button for downloading the CV ----------
 //btn-outline-primary
 // TODO: change "onmouseover" to enter and do the reverse action for exiting
-var myDownBtn = document.getElementById("DownloadBtn");
 
-myDownBtn.onmouseover = function() {
-    changeClassBtn();
+// var myDownBtn = document.getElementById("DownloadBtn");
+
+// myDownBtn.onmouseover = function() {
+//     changeClassBtn();
+// }
+
+// function changeClassBtn() {
+//     myDownBtn.classList.remove("btn-primary");
+//     myDownBtn.classList.add("btn-outline-primary");
+// }
+
+// ---------- For the button for downloading the CV v2 ----------
+//FIXME: the enter and exit thing needs some work | myDownBtn is getted as a set ¿? | because fontAwesome change the html before sending it
+var myDownBtn = document.getElementById("myBtn").getElementsByTagName("svg");
+console.log(myDownBtn);
+var myDownBtn2 = document.getElementById("myBtn");
+
+
+myDownBtn2.onmouseenter = function() {
+  mouseEntered();
+  // console.log("hi2");
+}
+myDownBtn2.onmouseout = function() {
+  mouseLeft();
 }
 
-function changeClassBtn() {
-    myDownBtn.classList.remove("btn-primary");
-    myDownBtn.classList.add("btn-outline-primary");
+function mouseEntered() {
+  console.log("entered");
+  myDownBtn[0].setAttribute("data-prefix", "far");
+}
 
+function mouseLeft() {
+  console.log("exited");
+  myDownBtn[0].setAttribute("data-prefix", "fas");
 }
