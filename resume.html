@@ -19,26 +19,27 @@
 </head>
 <body>
 <button class="border border-dark" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!-- Here, the initial section of the webpage, corresponding to the Picture + introduction -->
 <!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg -->
 <h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
 <nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-light border border-dark shadow">
-        <div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<!-- add the current work + last education (maybe) like it is done in linked in -->
+<!-- change to a more engineer/professional/clean picture -->
 <div class="container-fluid rounded" style="padding: 2em;">
     <div class="row rounded border border-dark" style="background-color: #e3f2fd; padding: 30px;">
         <div class="col-4">
@@ -54,13 +55,16 @@
         </div>
         <br>
     </div>
+    <div>
+        <!-- This is linked to the navigation bar href -->
+        <span id="Resume"></span>
+    </div>
 </div>
 <!-- TODO: maybe add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset clases -->
 <!-- TODO: add multiple columns for the list of skills taht depends on the screen width -->
 
-<div id="Resume"><br><br><br></div>
 <h1 style="text-align: center;">Resume</h1>
-<hr style="margin-bottom: 2px; margin-top: 2px;">
+<hr>
 <div class="container-fluid" style="padding: 10px;">
     <h2>Skills</h2>
     <div class="accordion rounded" id="accordionSkills">
