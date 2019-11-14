@@ -32,7 +32,7 @@
                 <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+                <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
@@ -42,6 +42,10 @@
 </nav>
 <!-- TODO: maybe add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset clases -->
 <!-- TODO: add multiple columns for the list of skills taht depends on the screen width -->
+
+<div id="Resume"><br><br><br></div>
+<h1 style="text-align: center;">Resume</h1>
+<hr style="margin-bottom: 2px; margin-top: 2px;">
 <div class="container-fluid" style="padding: 10px;">
     <h2>Skills</h2>
     <div class="accordion rounded" id="accordionSkills">
@@ -61,6 +65,11 @@
                         <li class="col-12 col-xl-4 col-md-6">PID and Model Predictive Control Systems</li>
                         <li class="col-12 col-xl-4 col-md-6">Economic Assessment of Processes</li>
                         <li class="col-12 col-xl-4 col-md-6">Life Cycle Assessment (openLCA)</li>
+                    </ul>
+                    <ul class="row">
+                        <div class="col-12 col-xl-4 col-md-6" style="background: pink;">
+                            <li>Steady State Simulations (Pro II, Hysys, UniSim)</li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -141,7 +150,7 @@
 <!-- ------------------------------------------------------------------- -->
 <!-- TODO: add alternative pictures -->
 <hr>
-<div class="container-fluid">
+<div id="workExperience" class="container-fluid">
     <h2>Work Experience</h2>
     <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="Accenture" data-toggle="collapse" href="#AccentureCollapse">
         <div class="row">
