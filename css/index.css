@@ -3,13 +3,18 @@ body {
     animation: slide 45s linear infinite;
 }
 
-/* 1. For the navigation bar */
+hr {
+    margin-bottom: 2px; 
+    margin-top: 2px;
+}
+
+/* ---------- For the navigation bar ---------- */
     #navbar {
         overflow: hidden;
         background: #e3f2fd;
     }
 
-/* 2. For the experience part (I think) */
+/* ---------- For the exoerience part (I think) ---------- */
     .blackiconcolor {
         color: black;
     }
@@ -23,7 +28,7 @@ body {
         margin: 0 auto;
     }
 
-/* 3. For the "Back to Top" button */
+/* ---------- For the "Back to Top" button ---------- */
 #myBtn {
     display: none;
     position: fixed;
@@ -43,13 +48,7 @@ body {
 #myBtn:hover {
     background-color: aqua;
 }
-
-hr {
-    margin-bottom: 2px; 
-    margin-top: 2px;
-}
-
-/* 99. For the background */
+/* ---------- For the background ---------- */
     @keyframes slide {
         from { background-position: 0 0; }
         to { background-position: -400px 400px; }
@@ -60,7 +59,7 @@ hr {
         to {opacity: 1;}
     }
 
-/* summary of refrence sintax for css
+/* ---------- Summary of reference sintax for CSS ----------
 #:      id
 .:      class
 (tag):  tag
