@@ -21,26 +21,40 @@
 <button class="border border-dark" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- Here, the initial section of the webpage, corresponding to the Picture + introduction -->
 <!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg -->
-
-
-<!-- Make this navigation bar stick to the top once scroll is done -->
 <h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
-<nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-light border border-dark">
-    <div>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
-            </li>
-        </ul>
+<nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-light border border-dark shadow">
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container-fluid rounded" style="padding: 2em;">
+    <div class="row rounded border border-dark" style="background-color: #e3f2fd; padding: 30px;">
+        <div class="col-4">
+            <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                <img class="rounded border border-dark" src="./pic/profilePolo10-11-2019_crop.jpg" alt="John" style="width: 100%;">
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-7">
+            <h6><u>Description</u>:</h6>
+            <h5 class="text-justify" style="margin-left: .5em; margin-right: .5em;">Master's student in chemical engineering at Politecnico di Milano, tech enthusiast, computer savvy.</h5>
+            <h5 class="text-justify" style="margin-left: .5em; margin-right: .5em;">I consider myself a truthful, open minded and highly versatile person with a great disposition to take modern challenges and work in a team.</h5>
+        </div>
+        <br>
     </div>
-</nav>
+</div>
 <!-- TODO: maybe add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset clases -->
 <!-- TODO: add multiple columns for the list of skills taht depends on the screen width -->
 
