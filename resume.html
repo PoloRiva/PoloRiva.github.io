@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO: change "FIXME" highlight configuration to "FIX" | TODO: add another custom highlight for "INFO" to indicate meainingful comments -->
+<!-- TODO: add another TODO highlight to separate code as br that has the "isWholeLine" equal to true -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,11 +18,12 @@
 
 </head>
 <body>
-    <!-- FIXME: fix the button behaviour | all in index.js -->
+<!-- FIXME: fix the button behaviour | all in index.js -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i id="iconBtn" class="fas fa-arrow-alt-circle-up fa-2x"></i></button>
 <!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | study the best way to compress video for web content -->
 <h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
+<!-- TODO: change behaviour of navbar | once sticked to top decrease its height | do not collapse on small screens -->
 <nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-light border border-dark shadow">
     <div>
         <ul class="navbar-nav mr-auto">
@@ -58,7 +59,7 @@
         <br>
     </div>
     <div>
-        <!-- This is linked to the navigation bar href -->
+        <!-- INFO: This is linked to the navigation bar href -->
         <span id="Resume"></span>
     </div>
 </div>
@@ -141,8 +142,7 @@
             </div>
         </div>
     </div>
-</div>
-<!-- ------------------------------------------------------------------- -->
+</div><!-- ------------------------------------------------------------------- -->
 <!-- TODO: add courses taken as a collapse button -->
 <hr>
 <div class="container-fluid">
@@ -176,6 +176,72 @@
                 <h6>March 2010 - August 2016</h6>
                 <h6>Concepción, Chile</h6>
             </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------- -->
+<!-- TODO: add courses taken as a collapse button -->
+<!-- FIXME: this is the one under construction!!! -->
+<hr>
+<div class="container-fluid">
+    <h2>Education</h2>
+    <div class="bg-white border-top border-left border-right border-dark rounded-top" style="cursor: pointer;">
+        <div class="row" style="margin: 0 auto;" data-toggle="collapse" href="#PolimiCollapse">
+            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
+                <img src="pic/Logo_Politecnico_Milano.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
+                <h3 style="padding-left: 10px;">Politecnico di Milano</h3>
+                <h4 style="padding-left: 10px;">M.Sc. in Chemical Engineering</h4>
+                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Study of the kinetics for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts"</i></h6>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
+                <h6>September 2017 - January 2020</h6>
+                <h6>Milan, Italy</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small"  data-toggle="collapse" href="#PolimiCollapse">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+        <div class="collapse container-fluid" id="PolimiCollapse">
+            <h6><u>Courses</u>:</h6>
+            <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 0; padding-bottom: 1px;">
+                <ul class="row" style="padding-top: 10px;">
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <li>Office Suite (Word, Excel, PowerPoint, Visio, Access)</li>
+                        <li>Programming IDEs (VS Code, MATLAB, Visual Studio, IntelliJ)</li>
+                        <li>Digital Media Editor (Adobe CS: Photoshop, After Effect, Premiere, Illustrator)</li>
+                    </div>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <li>Programming Knowledge (MATLAB, C++, Java, JavaScript)</li>
+                        <li>Database management (Oracle Database, SQL, PL/SQL)</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                    </div>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <li>Source Control Management (Git, Github)</li>
+                        <li>3D Modeling (AutoCAD)</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    <div class="bg-white border-bottom border-left border-right border-dark shadow rounded-bottom" style="cursor: pointer; padding-top: 0;">
+        <div class="row" style="margin: 0 auto;">
+            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
+                <img src="pic/Logo_UdeC.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
+                <h3 style="padding-left: 10px;">Universidad de Concepción</h3>
+                <h4 style="padding-left: 10px;">B.Sc. in Chemical Civil Engineering</h4>
+                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Polyurethane intumescent coating formulation based on tannins from Pinus Radiata"</i></h6>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
+                <h6>March 2010 - August 2016</h6>
+                <h6>Concepción, Chile</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small">
+            <i class="fas fa-angle-down small"></i>
         </div>
     </div>
 </div>

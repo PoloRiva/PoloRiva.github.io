@@ -45,22 +45,28 @@ function topFunction() {
 var myDownBtn = document.getElementById("myBtn").getElementsByTagName("svg");
 console.log(myDownBtn);
 var myDownBtn2 = document.getElementById("myBtn");
+var hasEntered = false;
 
 
 myDownBtn2.onmouseenter = function() {
-  mouseEntered();
-  // console.log("hi2");
+  if (!hasEntered) {
+    mouseEntered();
+  }
 }
 myDownBtn2.onmouseout = function() {
-  mouseLeft();
+  if (hasEntered) {
+    mouseLeft();
+  }
 }
 
 function mouseEntered() {
   console.log("entered");
+  hasEntered = true;
   myDownBtn[0].setAttribute("data-prefix", "far");
 }
 
 function mouseLeft() {
   console.log("exited");
+  hasEntered = false;
   myDownBtn[0].setAttribute("data-prefix", "fas");
 }

@@ -44,6 +44,8 @@ hr {
     padding: 5px;
     border-radius: 0px;
     border-color: black;
+    height: 100px;
+    width: 100px;
 }
 #myBtn:hover {
     background-color: aqua;
