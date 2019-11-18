@@ -8,6 +8,10 @@ hr {
     margin-top: 2px;
 }
 
+td {
+    text-align: left;
+}
+
 /* ---------- For the navigation bar ---------- */
     #navbar {
         overflow: hidden;
