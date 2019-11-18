@@ -144,43 +144,6 @@
     </div>
 </div><!-- ------------------------------------------------------------------- -->
 <!-- TODO: add courses taken as a collapse button -->
-<hr>
-<div class="container-fluid">
-    <h2>Education</h2>
-    <div class="bg-white border border-dark shadow rounded">
-        <div class="row" style="margin: 0 auto;">
-            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
-                <img src="pic/Logo_Politecnico_Milano.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
-            </div>
-            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
-                <h3 style="padding-left: 10px;">Politecnico di Milano</h3>
-                <h4 style="padding-left: 10px;">M.Sc. in Chemical Engineering</h4>
-                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Study of the kinetics for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts"</i></h6>
-            </div>
-            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
-                <h6>September 2017 - January 2020</h6>
-                <h6>Milan, Italy</h6>
-            </div>
-        </div>
-        <hr style="margin-bottom: 2px; margin-top: 2px;">
-        <div class="row" style="margin: 0 auto;">
-            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
-                <img src="pic/Logo_UdeC.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
-            </div>
-            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
-                <h3 style="padding-left: 10px;">Universidad de Concepción</h3>
-                <h4 style="padding-left: 10px;">B.Sc. in Chemical Civil Engineering</h4>
-                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Polyurethane intumescent coating formulation based on tannins from Pinus Radiata"</i></h6>
-            </div>
-            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
-                <h6>March 2010 - August 2016</h6>
-                <h6>Concepción, Chile</h6>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ------------------------------------------------------------------- -->
-<!-- TODO: add courses taken as a collapse button -->
 <!-- FIXME: this is the one under construction!!! -->
 <hr>
 <div class="container-fluid">
@@ -204,29 +167,37 @@
             <i class="fas fa-angle-down small"></i>
         </div>
     </div>
-        <div class="collapse container-fluid" id="PolimiCollapse">
-            <h6><u>Courses</u>:</h6>
-            <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 0; padding-bottom: 1px;">
-                <ul class="row" style="padding-top: 10px;">
-                    <div class="col-12 col-xl-4 col-md-6">
-                        <li>Office Suite (Word, Excel, PowerPoint, Visio, Access)</li>
-                        <li>Programming IDEs (VS Code, MATLAB, Visual Studio, IntelliJ)</li>
-                        <li>Digital Media Editor (Adobe CS: Photoshop, After Effect, Premiere, Illustrator)</li>
-                    </div>
-                    <div class="col-12 col-xl-4 col-md-6">
-                        <li>Programming Knowledge (MATLAB, C++, Java, JavaScript)</li>
-                        <li>Database management (Oracle Database, SQL, PL/SQL)</li>
-                        <li>Web Development (HTML, CSS, JavaScript)</li>
-                    </div>
-                    <div class="col-12 col-xl-4 col-md-6">
-                        <li>Source Control Management (Git, Github)</li>
-                        <li>3D Modeling (AutoCAD)</li>
-                    </div>
-                </ul>
-            </div>
+    <!-- TODO: when click -> make collapse button shadow visible -->
+    <div class="collapse container-fluid border" id="PolimiCollapse" style="background: #e3f2fd;">
+        <h6><u>Courses</u>:</h6>
+        <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 1px;">
+            <ul class="row">
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Process Systems Engineering</li>
+                    <li>Advance Mathematical Analysis</li>
+                    <li>Mechanics of Solids and Structures II</li>
+                    <li>Chemical Plants II</li>
+                    <li>Principles of Polymer Chemistry</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Dynamics and Control of Chemical Processes</li>
+                    <li>Chemical Reaction Engineering</li>
+                    <li>Applied Chemical Kinetics</li>
+                    <li>Principles of Polymer Chemistry</li>
+                    <li>Computational Fluid Dynamics of Reactive Flows</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Process Control and Instrumentation Laboratory</li>
+                    <li>Applied Mechanics</li>
+                    <li>Formulation Technology</li>
+                    <li>Industrial Organic Chemistry</li>
+                    <li>Chemical and Materials for Energy and Enviroment</li>
+                </div>
+            </ul>
         </div>
+    </div>
     <div class="bg-white border-bottom border-left border-right border-dark shadow rounded-bottom" style="cursor: pointer; padding-top: 0;">
-        <div class="row" style="margin: 0 auto;">
+        <div class="row" style="margin: 0 auto;" data-toggle="collapse" href="#UdeCCollapse">
             <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
                 <img src="pic/Logo_UdeC.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
             </div>
@@ -240,8 +211,72 @@
                 <h6>Concepción, Chile</h6>
             </div>
         </div>
-        <div class="row justify-content-center small">
+        <div class="row justify-content-center small" data-toggle="collapse" href="#UdeCCollapse">
             <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse container-fluid border" id="UdeCCollapse" style="background: #e3f2fd;">
+        <h6><u>Courses</u>:</h6>
+        <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 1px;">
+            <ul class="row">
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Introduction to Physics</li>
+                    <li>Physics I</li>
+                    <li>General Chemistry I</li>
+                    <li>General Chemistry II</li>
+                    <li>Statistics</li>
+                    <li>Mechanics</li>
+                    <li>Organic Chemistry I</li>
+                    <li>Introduction to Environmental Sciences</li>
+                    <li>Heat Transfer</li>
+                    <li>Chemical Reactor Design</li>
+                    <li>Drawing of Chemical Processes</li>
+                    <li>Laboratory of Chemical Processes II</li>
+                    <li>Food Industry Operations</li>
+                    <li>Formulation and Evaluation of Projects</li>
+                    <li>Safe Handling of Hazardous Substances</li>
+                    <li>English I</li>
+                    <li>Modern Administration and Techniques for Prevention and Control of Risk</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Introduction to Mathematics</li>
+                    <li>Algebra I</li>
+                    <li>Physics II</li>
+                    <li>Ordinary Differential Equations</li>
+                    <li>Introduction to Chemical Engineering</li>
+                    <li>Numerical Analysis</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Organic Chemistry II</li>
+                    <li>Engineering Communication</li>
+                    <li>Mass Transfer</li>
+                    <li>Italian II</li>
+                    <li>Process Dynamics</li>
+                    <li>Process Control</li>
+                    <li>Project I</li>
+                    <li>Transport Phenomena</li>
+                    <li>Optimization of Processes</li>
+                    <li>Statistical Data Processing and Design of Experiments</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Introduction to Chemistry</li>
+                    <li>Calculus I</li>
+                    <li>Algebra II</li>
+                    <li>Calculus II</li>
+                    <li>Electromagnatism</li>
+                    <li>Thermodynamics</li>
+                    <li>Thermodynamics of Chemical Processes</li>
+                    <li>Physical Chemistry</li>
+                    <li>Italian I</li>
+                    <li>Laboratory of Chemical Processes I</li>
+                    <li>Separation Operations</li>
+                    <li>Economy</li>
+                    <li>Process Synthesis</li>
+                    <li>Chemical Process Industries</li>
+                    <li>Business Management</li>
+                    <li>Project II</li>
+                    <li>Legal Aspects of the Company</li>
+                </div>
+            </ul>
         </div>
     </div>
 </div>
