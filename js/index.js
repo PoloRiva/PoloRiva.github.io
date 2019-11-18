@@ -1,3 +1,11 @@
+// ---------- navigation bar icon change dynamically ----------
+// var AboutMePosition = document.getElementById("AboutMe").getBoundingClientRect();
+
+
+// function logWhatINeed() {
+//   console.log(AboutMePosition.top, AboutMePosition.right, AboutMePosition.bottom, AboutMePosition.left);
+// }
+
 // ---------- my age is calculated automatically ----------
 window.onload = function() {calculateAge()};
 
@@ -20,13 +28,10 @@ function calculateAge() {
 var mybutton = document.getElementById("myBtn");
 var myBtnIcon = document.getElementById("myBtn").getElementsByTagName("img");
 
-window.onscroll = function() {scrollFunction(),logWhatINeed()};
+// FIXME: remove logWhatINeed() function from the scroll
+window.onscroll = function() {scrollFunction()};
 mybutton.onmouseenter = function() {mouseEntered();}
 mybutton.onmouseout = function() {mouseLeft();}
-
-function logWhatINeed() {
-  
-}
 
 function mouseEntered() {
   myBtnIcon[0].setAttribute("src", "./pic/arrow-alt-circle-up-regular.png");
@@ -37,7 +42,7 @@ function mouseLeft() {
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

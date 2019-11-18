@@ -21,34 +21,36 @@
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./pic/arrow-alt-circle-up-solid.png" alt="" style="width: 35px;"></button>
 <!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | research the best way to compress video for web content -->
-<h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
+<h1 id="AboutMe" style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
 <nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow" style="padding: 0;">
     <div>
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#AboutMe"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#ContactMe"><i class="fas fa-pencil-alt"></i> Contact me</a>
+            </li>
+            <li class="nav-item ml-auto disabled">
+                <a class="nav-link disabled" href="#"><i class="fas fa-lightbulb"></i> Projects</a>
             </li>
         </ul>
     </div>
 </nav>
-
 <!-- TODO: add the current work + last education (maybe) | like a quick presentation style -->
 <!-- TODO: change to a more engineer/professional/clean picture -->
 <!-- FIXME: fix the distribution of the columns part of the About Me part | it doesnt shows correctly on cellphone -->
 <!-- TODO: add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset & hidden clases for columns-->
-
-<div id="AboutMe" class="container-fluid" style="padding: 10px;">
+<!-- FIXME: fix that every list shows 2x-1x length columns when the screen is medium size -->
+<div class="container-fluid" style="padding: 10px;">
     <div class="rounded border border-dark" style="background-color: #e3f2fd; padding: 10px;">
         <div class="row">
             <div class="col-12 col-xl-3 col-lg-5 col-md-6">
-                <div class="card shadow border border-dark col-centered" style="text-align: center; padding: 10px; max-width: 350px;">
+                <div class="card shadow border border-dark col-centered" style="text-align: center; padding: 10px; max-width: 300px;">
                     <img class="rounded border border-dark" src="./pic/profilePolo10-11-2019_crop.jpg" alt="John" style="width: 100%;">
                     <br>
                     <table class="table" style="margin-bottom: 0;">
@@ -67,6 +69,7 @@
                             </tr>
                             <tr>
                                 <td><b>EXPERIENCE</b></td>
+                                <!-- FIXME: make the years of experience update automatically -->
                                 <td>2 years</td>
                             </tr>
                             <tr>
@@ -84,10 +87,10 @@
                 <h5 class="text-justify" style="margin-left: .5em; margin-right: .5em;">I consider myself a truthful, open minded and highly versatile person with a great disposition to take modern challenges and work in a team.</h5>
             </div>
         </div>
-    </div>
-    <div>
-        <!-- INFO: This is linked to the navigation bar href -->
-        <span id="Resume"></span>
+        <div>
+            <!-- INFO: This is linked to the navigation bar href -->
+            <span id="Resume"></span>
+        </div>
     </div>
 </div>
 <!-- ------------------------------------------------------------------- -->
@@ -552,15 +555,26 @@
 <br>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6" style="text-align: center;">
+        <div class="col-2"></div>
+        <div class="col-8" style="text-align: center;">
             <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
-                [_]
+                <table class="table" style="margin-bottom: 0;">
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-2x fa-envelope blackiconcolor"></i></td>
+                            <td><a href="mailto:riva.polo@gmail.com">riva.polo@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></td>
+                            <td><a href="tel:+56959113912">+39 331 802 3392</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="col-3"></div>
+        <div class="col-2"></div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br>
 </div>
 <!-- TODO: Add links to Linked-in | Github | etc -->
 
