@@ -56,9 +56,6 @@ button img {
     height: 100px;
     width: 100px;
 }
-#myBtn:hover {
-    background-color: aqua;
-}
 
 /* ---------- For the background ---------- */
     @keyframes slide {
