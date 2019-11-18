@@ -20,17 +20,19 @@ function calculateAge() {
 var mybutton = document.getElementById("myBtn");
 var myBtnIcon = document.getElementById("myBtn").getElementsByTagName("img");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(),logWhatINeed()};
 mybutton.onmouseenter = function() {mouseEntered();}
 mybutton.onmouseout = function() {mouseLeft();}
 
+function logWhatINeed() {
+  
+}
+
 function mouseEntered() {
-  console.log("entered");
   myBtnIcon[0].setAttribute("src", "./pic/arrow-alt-circle-up-regular.png");
 }
 
 function mouseLeft() {
-  console.log("exited");
   myBtnIcon[0].setAttribute("src", "./pic/arrow-alt-circle-up-solid.png");
 }
 
