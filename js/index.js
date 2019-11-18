@@ -1,3 +1,21 @@
+// ---------- functions that run when the page loads ----------
+window.onload = function() {calculateAge()};
+
+function calculateAge() {
+  var d = new Date();
+  var thisYear = d.getFullYear();
+  var thisMonth = d.getMonth();
+  var thisDay = d.getDate();
+  var myAge = thisYear-1992-1;
+  if(thisMonth>=4) {
+    if(thisDay>=10) {
+      myAge += 1;
+    }
+  }
+  var myAgeValue = document.getElementById("myAgeValue");
+  myAgeValue.innerHTML = myAge;
+}
+
 // ---------- For the "Back to Top" button ----------
 var mybutton = document.getElementById("myBtn");
 var myBtnIcon = document.getElementById("myBtn").getElementsByTagName("img");
@@ -24,12 +42,12 @@ function scrollFunction() {
   }
 }
 
-window.onscroll = function() {stickyChange()};
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
 
 // ---------- For the button for downloading the CV ----------
 //btn-outline-primary
