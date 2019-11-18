@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO: add another TODO highlight to separate code as br that has the "isWholeLine" equal to true -->
+<!-- TODO: add another TODO highlight to separate code as br like "BREAKPOINT:" that has the "isWholeLine" equal to true -->
 <!-- TODO: export all awesome vectorial icons to png icons (50x50 for 1:1) to be able to use then without importing all of font awesome libraries -->
 <head>
 <meta charset="UTF-8">
@@ -19,9 +19,8 @@
 
 </head>
 <body>
-<!-- FIXME: fix the button behaviour | all in index.js -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./pic/arrow-alt-circle-up-solid.png" alt="" style="width: 35px;"></button>
-<!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | study the best way to compress video for web content -->
+<!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | research the best way to compress video for web content -->
 <h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
 <nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow" style="padding: 0;">
@@ -40,9 +39,10 @@
     </div>
 </nav>
 
-<!-- TODO: add the current work + last education (maybe) | like a quick presentation art -->
+<!-- TODO: add the current work + last education (maybe) | like a quick presentation style -->
 <!-- TODO: change to a more engineer/professional/clean picture -->
 <!-- FIXME: fix the distribution of the columns part of the About Me part | it doesnt shows correctly on cellphone -->
+<!-- TODO: add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset & hidden clases for columns-->
 
 <div id="AboutMe" class="container-fluid" style="padding: 10px;">
     <div class="rounded border border-dark" style="background-color: #e3f2fd; padding: 10px;">
@@ -91,7 +91,6 @@
     </div>
 </div>
 <!-- ------------------------------------------------------------------- -->
-<!-- TODO: add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset clases -->
 <h1 style="text-align: center;">Resume</h1>
 <hr>
 <div class="container-fluid" style="padding: 10px;">
@@ -306,9 +305,6 @@
     </div>
 </div>
 <!-- ------------------------------------------------------------------- -->
-<!-- TODO: add alternative pictures -->
-<!-- TODO: add Linkedin logo to every profile img -->
-<!-- FIXME: fix the padding problem in the "reference" part | it doesnt aligns correctly | the impact is obvious on cellphone -->
 <hr>
 <div id="workExperience" class="container-fluid" style="padding: 10px;">
     <h2>Work Experience</h2>
@@ -339,12 +335,17 @@
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
                 <h6><u>Reference</u>:</h6>
                 <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
-                    <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C5603AQEJPPxwRm5izA/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=cm4BZ9IaV89IUJZGoXt3BANmkgpBu8JEWueZZspN0DI" alt="No picture available" style="width: 100%;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C5603AQEJPPxwRm5izA/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=cm4BZ9IaV89IUJZGoXt3BANmkgpBu8JEWueZZspN0DI" alt="No picture available" style="width: 100%;">
+                        <!-- FIXME: change edge picture for github logo (512x512) | the picture is taken from there -->
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
                     <h5>Emanuele Galli</h5>
                     <h6 style="line-height: 1.5ch;">Senior Software Developer</h6>
                     <h6 style="line-height: 2ch;">Accenture</h6>
                     <div class="row">
                         <div class="col"></div>
+                        <a class="col" href="https://github.com/egalli64"><i class="fab fa-2x fa-github-square blackiconcolor"></i></a>
                         <a class="col" href="http://www.linkedin.com/in/egalli"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
                         <a class="col" href="mailto:egalligmail.com"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
                         <div class="col"></div>
@@ -382,7 +383,10 @@
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
                 <h6><u>Reference</u>:</h6>
                 <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
-                    <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQEhq8-yu7QcYg/profile-displayphoto-shrink_800_800/0?e=1578528000&v=beta&t=5iyGoRaxutnsefRHJwyCIbItpFFKovFXYIfWszkWL_Q" alt="No picture available" style="width: 100%;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQEhq8-yu7QcYg/profile-displayphoto-shrink_800_800/0?e=1578528000&v=beta&t=5iyGoRaxutnsefRHJwyCIbItpFFKovFXYIfWszkWL_Q" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
                     <h5>Roberto Dalla Muta</h5>
                     <h6 style="line-height: 1.5ch;">Natural Gas Trader</h6>
                     <h6 style="line-height: 2ch;">Enet Energy SA</h6>
@@ -424,7 +428,10 @@
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
                 <h6><u>Reference</u>:</h6>
                 <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
-                    <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
                     <h5>Katherina Fernandez</h5>
                     <h6 style="line-height: 1.5ch;">Associate Professor</h6>
                     <h6 style="line-height: 2ch;">Universidad de Concepción</h6>
@@ -466,7 +473,10 @@
             <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
                 <h6><u>Reference</u>:</h6>
                 <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
-                    <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
                     <h5>Katherina Fernandez</h5>
                     <h6 style="line-height: 1.5ch;">Associate Professor</h6>
                     <h6 style="line-height: 2ch;">Universidad de Concepción</h6>
@@ -525,13 +535,13 @@
         </ul>
     </div>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center; padding: 10px;">
     <button id="DownloadBtn" class="btn btn-primary" type="button" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;">
         <a id="ContactMe" href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV" style="color: white;"><i class="fas fa-file-download whiteiconcolor"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
     </button>    
 </div>
 <!-- ------------------------------------------------------------------- -->
-<br><hr>
+<hr>
 <!-- <br><hr> -->
 <h1 style="text-align: center;">Contact Me</h1>
 <br>
