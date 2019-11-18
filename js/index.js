@@ -24,6 +24,8 @@ function scrollFunction() {
   }
 }
 
+window.onscroll = function() {stickyChange()};
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -43,9 +45,6 @@ function topFunction() {
 //     myDownBtn.classList.remove("btn-primary");
 //     myDownBtn.classList.add("btn-outline-primary");
 // }
-
-// ---------- For the sticky navigation ----------
-// TODO: add the class "rounded-bottom" + the style "padding: 0;" whenever the navigation get sticky
 
 // ---------- This functions are useful to remove and add classes to elements ----------
 // $( '#topheader .navbar-nav a' ).on( 'click', function () {
