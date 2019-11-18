@@ -1,4 +1,4 @@
-// ---------- functions that run when the page loads ----------
+// ---------- my age is calculated automatically ----------
 window.onload = function() {calculateAge()};
 
 function calculateAge() {
