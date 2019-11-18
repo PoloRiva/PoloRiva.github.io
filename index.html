@@ -24,17 +24,17 @@
 <h1 style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
 <!-- TODO: change behaviour of navbar | once sticked to top decrease its height | do not collapse on small screens -->
-<nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow">
+<nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow" style="padding: 0;">
     <div>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#AboutMe"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html"><i class="fas fa-pencil-alt"></i> Contact me</a>
+                <a class="nav-link" href="#ContactMe"><i class="fas fa-pencil-alt"></i> Contact me</a>
             </li>
         </ul>
     </div>
@@ -43,7 +43,7 @@
 <!-- TODO: add the current work + last education (maybe) | like a quick presentation art -->
 <!-- TODO: change to a more engineer/professional/clean picture -->
 <!-- FIXME: fix the distribution of the columns part of the quick presentation part | it doesnt shows correctly on cellphone -->
-<div class="container-fluid rounded" style="padding: 2em;">
+<div id="AboutMe" class="container-fluid rounded" style="padding: 2em;">
     <div class="row rounded border border-dark" style="background-color: #e3f2fd; padding: 30px;">
         <div class="col-4">
             <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
@@ -529,7 +529,7 @@
 </div>
 <div style="text-align: center;">
     <button id="DownloadBtn" class="btn btn-primary" type="button" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;">
-        <a href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV" style="color: white;"><i class="fas fa-file-download whiteiconcolor"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
+        <a id="ContactMe" href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV" style="color: white;"><i class="fas fa-file-download whiteiconcolor"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
     </button>    
 </div>
 <!-- ------------------------------------------------------------------- -->
@@ -547,6 +547,7 @@
         </div>
         <div class="col-3"></div>
     </div>
+    <br><br><br><br><br><br><br><br>
 </div>
 <!-- TODO: Add links to Linked-in | Github | etc -->
 
