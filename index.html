@@ -2,6 +2,7 @@
 <html>
 <!-- TODO: add another TODO highlight to separate code as br like "BREAKPOINT:" that has the "isWholeLine" equal to true -->
 <!-- TODO: export all awesome vectorial icons to png icons (50x50 for 1:1) to be able to use then without importing all of font awesome libraries -->
+<!-- FIXME: Collapse is laggy when the collapsing element has padding, to improve this make a div parent element as the one who collaspe without the padding tag -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -554,9 +555,36 @@
 <h1 style="text-align: center;">Contact Me</h1>
 <br>
 <div class="container-fluid">
+</div>
+<div class="container-fluid">
     <div class="row">
-        <div class="col-1 col-sm-3 col-lg-4"></div>
-        <div class="col-10 col-sm-6 col-lg-4" style="text-align: center;">
+        <div class="col-1"></div>
+        <div class="col-6">
+            <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                <!-- INFO: Dear mr. hacker, please dont spam me with infinite messages 🙏 -->
+                <!-- FIXME: the action need to execute a js program that send the post  -->
+                <input type="hidden" name="chat_id" value="258936">
+                <input type="hidden" name="parse_mod" value="markdown">
+                <table class="table" style="margin-bottom: 0;">
+                    <tbody>
+                        <tr>
+                            <td><b>Name</b></td>
+                            <td><textarea class="rounded" placeholder="" name="name" cols="30" rows="1"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Company</b></td>
+                            <td><textarea class="rounded" placeholder="" name="company" cols="30" rows="1"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Message</b></td>
+                            <td><textarea class="rounded" placeholder="Dear Paolo Riva..." name="text" cols="30" rows="5"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-4" style="text-align: center;">
             <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
                 <table class="table" style="margin-bottom: 0;">
                     <tbody>
@@ -572,7 +600,7 @@
                 </table>
             </div>
         </div>
-        <div class="col-1 col-sm-3 col-lg-4"></div>
+        <div class="col-1"></div>
     </div>
     <br><br>
 </div>

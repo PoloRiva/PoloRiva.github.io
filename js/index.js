@@ -1,3 +1,19 @@
+// ---------- This sends the post request to the Telegram bot----------
+// var telegramButton = document.getElementById("telegramButton");
+// telegramButton.onclick(){sendTelegramPOST()};
+
+// TODO: add a "your message was delivered" message
+function sendTelegramPOST() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://api.telegram.org/bot1058992317:AAHy2ExAPseR-kqVoKTqebLvmg8SCTfxaTI/sendMessage", true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+  chat_id: "258936",
+  parse_mod: "markdown",
+  text: "hello from js"
+  }));
+};
+
 // ---------- navigation bar icon change dynamically ----------
 // var AboutMePosition = document.getElementById("AboutMe").getBoundingClientRect();
 
