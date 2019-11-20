@@ -4,14 +4,21 @@
 
 // TODO: add a "your message was delivered" message
 function sendTelegramPOST() {
+  var nameTelegram = document.getElementById("nameTelegram").value;
+  var companyTelegram = document.getElementById("companyTelegram").value;
+  var textTelegram = document.getElementById("textTelegram").value;
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "https://api.telegram.org/bot1058992317:AAHy2ExAPseR-kqVoKTqebLvmg8SCTfxaTI/sendMessage", true);
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.send(JSON.stringify({
   chat_id: "258936",
   parse_mod: "markdown",
-  text: "hello from js"
+  text: "name: " + nameTelegram + "\ncompany: " + companyTelegram + "\n\n" + textTelegram
   }));
+  document.getElementById("nameTelegram").value = "";
+  document.getElementById("companyTelegram").value = "";
+  document.getElementById("textTelegram").value = "";
+  // TODO: Add a cool alert confirming that the message has been send
 };
 
 // ---------- navigation bar icon change dynamically ----------
