@@ -18,8 +18,15 @@ function sendTelegramPOST() {
   document.getElementById("nameTelegram").value = "";
   document.getElementById("companyTelegram").value = "";
   document.getElementById("textTelegram").value = "";
-  // TODO: Add a cool alert confirming that the message has been send
+  // TODO: Add a cool modal giving greatings and confirming that the message has been send
+  $("#myModal").modal();
+  setTimeout(function() {
+    $("#myModal").modal("hide");
+  }, 1500);
+  // TODO: disable the submit button for 5 seconds after clicking
 };
+
+
 
 // ---------- navigation bar icon change dynamically ----------
 // var AboutMePosition = document.getElementById("AboutMe").getBoundingClientRect();

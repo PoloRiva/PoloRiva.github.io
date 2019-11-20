@@ -3,6 +3,7 @@
 <!-- TODO: add another TODO highlight to separate code as br like "BREAKPOINT:" that has the "isWholeLine" equal to true -->
 <!-- TODO: export all awesome vectorial icons to png icons (50x50 for 1:1) to be able to use then without importing all of font awesome libraries -->
 <!-- FIXME: Collapse is laggy when the collapsing element has padding, to improve this make a div parent element as the one who collaspe without the padding tag -->
+<!-- FIXME: consider to user glyphicon icons from Bootstrap instead of FontAwesome ones-->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,10 +21,28 @@
 
 </head>
 <body>
+
+<!-- ------------------------------------------------------------------- -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./pic/arrow-alt-circle-up-solid.png" alt="" style="width: 35px;"></button>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- TODO: finish this modal to show when the submit button in the ContactMe section is pressed -->
+<!-- FIXME: the message need some formatting | also some padding or marging -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="position: relative; top: 50%; transform: translateY(-50%);">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="padding-bottom: 0;">
+                <h3 style="text-align: center;">Message sent</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | research the best way to compress video for web content -->
 <h1 id="AboutMe" style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
 
+<!-- ------------------------------------------------------------------- -->
 <nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow" style="padding: 0;">
     <div>
         <ul class="navbar-nav mr-auto">
@@ -42,6 +61,9 @@
         </ul>
     </div>
 </nav>
+
+
+
 <!-- TODO: add the current work + last education (maybe) | like a quick presentation style -->
 <!-- TODO: change to a more engineer/professional/clean picture -->
 <!-- FIXME: fix the distribution of the columns part of the About Me part | it doesnt shows correctly on cellphone -->
@@ -79,7 +101,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-- ------------------------------------------------------------------- -->
                 </div>
             </div>
             <div class="col-12 col-xl-9 col-lg-7 col-md-6">
@@ -186,7 +207,8 @@
             </div>
         </div>
     </div>
-</div><!-- ------------------------------------------------------------------- -->
+</div
+><!-- ------------------------------------------------------------------- -->
 <hr>
 <div class="container-fluid" style="padding: 10px;">
     <h2>Education</h2>
@@ -265,69 +287,6 @@
         <h6><u>Courses</u>:</h6>
         <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 1px;">
             <ul class="row" style="padding-top: 0px;">
-                    <div class="col-12 col-xl-4 col-md-6">
-                        <li>Introduction to Physics</li>
-                        <li>Physics I</li>
-                        <li>General Chemistry I</li>
-                        <li>General Chemistry II</li>
-                        <li>Statistics</li>
-                        <li>Mechanics</li>
-                        <li>Organic Chemistry I</li>
-                        <li>Introduction to Environmental Sciences</li>
-                        <li>Heat Transfer</li>
-                        <li>Chemical Reactor Design</li>
-                        <li>Drawing of Chemical Processes</li>
-                        <li>Laboratory of Chemical Processes II</li>
-                        <li>Food Industry Operations</li>
-                        <li>Formulation and Evaluation of Projects</li>
-                        <li>Safe Handling of Hazardous Substances</li>
-                        <li>English I</li>
-                        <li>Modern Administration and Techniques for Prevention and Control of Risk</li>
-                    </div>
-                    <div class="col-12 col-xl-4 col-md-6">
-                        <li>Introduction to Mathematics</li>
-                        <li>Algebra I</li>
-                        <li>Physics II</li>
-                        <li>Ordinary Differential Equations</li>
-                        <li>Introduction to Chemical Engineering</li>
-                        <li>Numerical Analysis</li>
-                        <li>Fluid Mechanics</li>
-                        <li>Organic Chemistry II</li>
-                        <li>Engineering Communication</li>
-                        <li>Mass Transfer</li>
-                        <li>Italian II</li>
-                        <li>Process Dynamics</li>
-                        <li>Process Control</li>
-                        <li>Project I</li>
-                        <li>Transport Phenomena</li>
-                        <li>Optimization of Processes</li>
-                        <li>Statistical Data Processing and Design of Experiments</li>
-                    </div>
-                    <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
-                        <div class="col-12 col-xl-12 col-md-6">
-                            <li>Introduction to Chemistry</li>
-                            <li>Calculus I</li>
-                            <li>Algebra II</li>
-                            <li>Calculus II</li>
-                            <li>Electromagnatism</li>
-                            <li>Thermodynamics</li>
-                            <li>Thermodynamics of Chemical Processes</li>
-                            <li>Physical Chemistry</li>
-                            <li>Italian I</li>
-                        </div>
-                        <div class="col-12 col-xl-12 col-md-6">
-                            <li>Laboratory of Chemical Processes I</li>
-                            <li>Separation Operations</li>
-                            <li>Economy</li>
-                            <li>Process Synthesis</li>
-                            <li>Chemical Process Industries</li>
-                            <li>Business Management</li>
-                            <li>Project II</li>
-                            <li>Legal Aspects of the Company</li>
-                        </div>
-                    </div>
-                </ul>
-            <!-- <ul class="row">
                 <div class="col-12 col-xl-4 col-md-6">
                     <li>Introduction to Physics</li>
                     <li>Physics I</li>
@@ -366,26 +325,30 @@
                     <li>Optimization of Processes</li>
                     <li>Statistical Data Processing and Design of Experiments</li>
                 </div>
-                <div class="col-12 col-xl-4 col-md-6">
-                    <li>Introduction to Chemistry</li>
-                    <li>Calculus I</li>
-                    <li>Algebra II</li>
-                    <li>Calculus II</li>
-                    <li>Electromagnatism</li>
-                    <li>Thermodynamics</li>
-                    <li>Thermodynamics of Chemical Processes</li>
-                    <li>Physical Chemistry</li>
-                    <li>Italian I</li>
-                    <li>Laboratory of Chemical Processes I</li>
-                    <li>Separation Operations</li>
-                    <li>Economy</li>
-                    <li>Process Synthesis</li>
-                    <li>Chemical Process Industries</li>
-                    <li>Business Management</li>
-                    <li>Project II</li>
-                    <li>Legal Aspects of the Company</li>
+                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Introduction to Chemistry</li>
+                        <li>Calculus I</li>
+                        <li>Algebra II</li>
+                        <li>Calculus II</li>
+                        <li>Electromagnatism</li>
+                        <li>Thermodynamics</li>
+                        <li>Thermodynamics of Chemical Processes</li>
+                        <li>Physical Chemistry</li>
+                        <li>Italian I</li>
+                    </div>
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Laboratory of Chemical Processes I</li>
+                        <li>Separation Operations</li>
+                        <li>Economy</li>
+                        <li>Process Synthesis</li>
+                        <li>Chemical Process Industries</li>
+                        <li>Business Management</li>
+                        <li>Project II</li>
+                        <li>Legal Aspects of the Company</li>
+                    </div>
                 </div>
-            </ul> -->
+            </ul>
         </div>
     </div>
 </div>
@@ -632,7 +595,6 @@
 </div>
 <!-- ------------------------------------------------------------------- -->
 <hr>
-<!-- <br><hr> -->
 <h1 style="text-align: center;">Contact Me</h1>
 <br>
 <div class="container-fluid">
@@ -662,7 +624,8 @@
                         </tr>
                     </tbody>
                 </table>
-                <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;">
+                <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;" data-toggle="modal">
+                <!-- <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;"> -->
             </div>
         </div>
         <div class="col col-lg-3 col-md-4 col-centered" style="text-align: center; padding: 15px;">
