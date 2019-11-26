@@ -15,6 +15,7 @@ function toList() {
     solution = solution.concat(")");
     document.getElementById("toList1").value = solution;
 
+    // FIXME: if checkbox is checked do the following
     document.getElementById("toList1").select();
     document.execCommand("copy");
 };
