@@ -15,22 +15,25 @@
 </head>
 
 <body>
-    <!-- <h1>Accenture Tools</h1> -->
-    <div>
-        <textarea name="" id="toList0" cols="30" rows="15"></textarea>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <button onclick="toList()">toList()</button>
-                </div>
-                <div class="col-3">
-                    <label class="container">auto-Copy
-                        <input type="checkbox" checked="checked">
-                    </label>
-                </div>
+    <h1 style="text-align: center;">Accenture Tools</h1>
+    <hr>
+    <div class="container-fluid">
+        <h3 style="text-align: center;">Column numbers to array format</h3>
+        <div class="row">
+            <div class="col">
+                    <textarea class="container-fluid" id="toList0" rows="15" style="background: #eaeaea; margin: 0 auto;"></textarea>
+            </div>
+            <div class="col">
+                <textarea class="container-fluid" id="toList1" rows="15"></textarea>
             </div>
         </div>
-        <textarea name="" id="toList1" cols="60" rows="10"></textarea>
+        <button onclick="toList()">toList()</button>
+        <br> <br>
+        <label class="container">auto-Copy
+            <input id="checkBoxButton" type="checkbox" checked="checked">
+        </label>
     </div>
+    <!-- ------------------------------o------------------------------ -->
+    <hr>
 </body>
 </html>
