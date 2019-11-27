@@ -41,4 +41,9 @@ function toCell() {
         // console.log(allLines[3+3*i].split(/\r\n|\n/));
     }
     document.getElementById("toCell1").value = solution;
+
+    if($('#checkBoxButton').is(':checked')) {
+        document.getElementById("toCell1").select();
+        document.execCommand("copy");
+    }
 };
