@@ -15,37 +15,129 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Accenture Tools</h1>
-    <hr>
-    <div class="container-fluid">
-        <h3 style="text-align: center;">Single column to array</h3>
-        <div class="row">
-            <div class="col">
-                    <textarea class="container-fluid" id="toList0" rows="15" style="background: #eaeaea; margin: 0 auto;"></textarea>
-            </div>
-            <div class="col">
-                <textarea class="container-fluid" id="toList1" rows="15"></textarea>
+    <div class="modal fade" id="mySingleColumnToArrayButtonModal" role="dialog">
+        <div class="modal-dialog" style="position: relative; top: 50%; transform: translateY(-50%);">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 10px;">
+                    <div class="container-fluid">
+                        <h3 style="text-align: center;">Single column to array</h3>
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="container-fluid" id="toList0" rows="15" style="background: #eaeaea; margin: 0 auto;"></textarea>
+                            </div>
+                            <div class="col">
+                                <textarea class="container-fluid" id="toList1" rows="15"></textarea>
+                            </div>
+                        </div>
+                        <button onclick="toList()">toList()</button>
+                        <br> <br>
+                        <label class="container">auto-Copy
+                            <input id="checkBoxButton" type="checkbox" checked="checked">
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
-        <button onclick="toList()">toList()</button>
-        <br> <br>
-        <label class="container">auto-Copy
-            <input id="checkBoxButton" type="checkbox" checked="checked">
-        </label>
     </div>
-    <!-- ------------------------------o------------------------------ -->
-    <hr>
-    <div class="container-fluid">
-        <h3 style="text-align: center;">Four columns to cell</h3>
-        <div class="row">
-            <div class="col">
-                    <textarea class="container-fluid" id="toCell0" rows="15" style="background: #eaeaea; margin: 0 auto;"></textarea>
-            </div>
-            <div class="col">
-                <textarea class="container-fluid" id="toCell1" rows="15"></textarea>
+    <div class="modal fade" id="myFourColumnsToCellModal" role="dialog">
+        <div class="modal-dialog" style="position: relative; top: 50%; transform: translateY(-50%);">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 10px;">
+                    <div class="container-fluid">
+                        <h3 style="text-align: center;">Four columns to cell</h3>
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="container-fluid" id="toCell0" rows="15" style="background: #eaeaea; margin: 0 auto;"></textarea>
+                            </div>
+                            <div class="col">
+                                <textarea class="container-fluid" id="toCell1" rows="15"></textarea>
+                            </div>
+                        </div>
+                        <button onclick="toCell()">toCell()</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <button onclick="toCell()">toCell()</button>
+    </div>
+    <div class="modal fade" id="myStartingFromUIMModal" role="dialog">
+        <div class="modal-dialog" style="position: relative; top: 50%; transform: translateY(-50%);">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 10px;">
+                    <div class="container-fluid">
+                        <h3 style="text-align: center;">Starting from UIM</h3>
+                        <h5>EntityID:</h5>
+                        <textarea name="" id="StartingFromUIMEntityID" onkeyup=StartingFromUIMEntityID() cols="30" rows="1"></textarea>
+                        <h5>Custome:</h5>
+                        <select name="" id="StartingFromUIMSelector">
+                            <!-- FIXME: fix the tipologia remaining -->
+                            <option value=""></option>
+                            <option value="LOCATION">Property Location</option>
+                            <option value="LOCATION">Place Location</option>
+                            <option value="ROOM">Room</option>
+                            <option value="ROW">Row</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="BAY">Bay</option>
+                            <option value="SHELF">Shelf</option>
+                            <option value="CARD">Card</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="SLOT">Slot</option>
+                            <option value="SLOT">Module Slot</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="PORT">Port</option>
+                            <option value="PIN">Pin</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="???">Physical Device</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="???">Logical Device</option>
+                            <option disabled="disabled">--------o--------</option>
+                            <option value="???">Fiber</option>
+                            <option value="???">Cable Link</option>
+                        </select>
+                        <button onclick=addTipology()>addTipologia()</button>
+                        <hr>
+                        <h5>query for UIM_2_DL: </h5>
+                        <textarea name="" id="StartingFromUIM_UIM_2_DL" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <h5>query for FROM_UIM: </h5>
+                        <textarea name="" id="StartingFromUIM_FROM_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <h5>query for TO_UIM: </h5>
+                        <textarea name="" id="StartingFromUIM_TO_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <h5>query for DL_2_UIM: </h5>
+                        <textarea name="" id="StartingFromUIM_DL_2_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <h1 style="text-align: center;">Accenture Tools</h1> -->
+    <div class="container-fluid">
+        <hr>
+        <h2 style="text-align: center;">Formatting tools</h2>
+        <br>
+        <div class="row">
+            <div class="col-6 text-center">
+                <button type="button" onclick=SingleColumnToArrayButton() class="btn btn-primary">Single column to array</button>
+            </div>
+            <div class="col-6 text-center">
+                <button type="button" onclick=FourColumnsToCell() class="btn btn-primary">Four columns to cell</button>
+            </div>
+        </div>
+        <br>
+
+        <hr>
+        <h2 style="text-align: center;">Search errors tools</h2>
+        <br>
+        <div class="row">
+            <div class="col-6 text-center">
+                <button type="button" onclick=StartingFromUIM() class="btn btn-primary">Starting from UIM</button>
+            </div>
+            <div class="col-6 text-center">
+                <p> </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
