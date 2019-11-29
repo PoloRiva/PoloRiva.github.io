@@ -9,7 +9,25 @@ function FourColumnsToCell() {
 
 function StartingFromUIM(){
     $("#myStartingFromUIMModal").modal();
-}
+};
+
+//copy function
+function copyUIM_2_DL() {
+    document.getElementById("StartingFromUIM_UIM_2_DL").select();
+    document.execCommand("copy");
+};
+function copyFROM_UIM() {
+    document.getElementById("StartingFromUIM_FROM_UIM").select();
+    document.execCommand("copy");
+};
+function copyTo_UIM() {
+    document.getElementById("StartingFromUIM_TO_UIM").select();
+    document.execCommand("copy");
+};
+function copyDL_2_UIM() {
+    document.getElementById("StartingFromUIM_DL_2_UIM").select();
+    document.execCommand("copy");
+};
 
 //creates query once textarea changes
 function StartingFromUIMEntityID() {

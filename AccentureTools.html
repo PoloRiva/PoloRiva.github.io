@@ -89,9 +89,9 @@
                             <option value="PORT">Port</option>
                             <option value="PIN">Pin</option>
                             <option disabled="disabled">--------o--------</option>
-                            <option value="???">Physical Device</option>
+                            <option value="EQUIPMENT">Physical Device</option>
                             <option disabled="disabled">--------o--------</option>
-                            <option value="???">Logical Device</option>
+                            <option value="EQUIPMENT">Logical Device</option>
                             <option disabled="disabled">--------o--------</option>
                             <option value="???">Fiber</option>
                             <option value="???">Cable Link</option>
@@ -100,12 +100,16 @@
                         <hr>
                         <h5>query for UIM_2_DL: </h5>
                         <textarea name="" id="StartingFromUIM_UIM_2_DL" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <button onclick=copyUIM_2_DL()>Copy()</button>
                         <h5>query for FROM_UIM: </h5>
                         <textarea name="" id="StartingFromUIM_FROM_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <button onclick=copyFROM_UIM()>Copy()</button>
                         <h5>query for TO_UIM: </h5>
                         <textarea name="" id="StartingFromUIM_TO_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <button onclick=copyTo_UIM()>Copy()</button>
                         <h5>query for DL_2_UIM: </h5>
                         <textarea name="" id="StartingFromUIM_DL_2_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <button onclick=copyDL_2_UIM()>Copy()</button>
                         <br>
                     </div>
                 </div>
