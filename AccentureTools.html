@@ -71,7 +71,7 @@
                         <h5>UIM - EntityID:</h5>
                         <textarea name="" id="StartingFromUIMEntityID" onkeyup=StartingFromUIMEntityID() cols="30" rows="1"></textarea>
                         <h5>Custome:</h5>
-                        <select name="" id="StartingFromUIMSelector">
+                        <select onchange=addTipology() name="" id="StartingFromUIMSelector">
                             <!-- FIXME: fix the tipologia -->
                             <option value=""></option>
                             <option value="LOCATION">Property Location</option>
@@ -96,19 +96,18 @@
                             <option value="???">Fiber</option>
                             <option value="???">Cable Link</option>
                         </select>
-                        <button onclick=addTipology()>addTipologia()</button>
                         <hr>
                         <h5>query for UIM_2_DL: </h5>
-                        <textarea name="" id="StartingFromUIM_UIM_2_DL" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <textarea name="" id="StartingFromUIM_UIM_2_DL" cols="100" rows="1" style="background: #eaeaea;" readonly></textarea>
                         <button onclick=copyUIM_2_DL()>Copy()</button>
                         <h5>query for FROM_UIM: </h5>
-                        <textarea name="" id="StartingFromUIM_FROM_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <textarea name="" id="StartingFromUIM_FROM_UIM" cols="100" rows="1" style="background: #eaeaea;" readonly></textarea>
                         <button onclick=copyFROM_UIM()>Copy()</button>
                         <h5>query for TO_UIM: </h5>
-                        <textarea name="" id="StartingFromUIM_TO_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <textarea name="" id="StartingFromUIM_TO_UIM" cols="100" rows="1" style="background: #eaeaea;" readonly></textarea>
                         <button onclick=copyTo_UIM()>Copy()</button>
                         <h5>query for DL_2_UIM: </h5>
-                        <textarea name="" id="StartingFromUIM_DL_2_UIM" cols="90" rows="1" style="background: #eaeaea;" readonly></textarea>
+                        <textarea name="" id="StartingFromUIM_DL_2_UIM" cols="100" rows="1" style="background: #eaeaea;" readonly></textarea>
                         <button onclick=copyDL_2_UIM()>Copy()</button>
                         <br>
                     </div>

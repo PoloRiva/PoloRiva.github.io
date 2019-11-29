@@ -42,26 +42,30 @@ function addTipology() {
     StartingFromUIMEntityID();
 
     var tipologia = document.getElementById("StartingFromUIMSelector").value;
-    //assignation
-    var query1 = document.getElementById("StartingFromUIM_UIM_2_DL").value;
-    var query2 = document.getElementById("StartingFromUIM_FROM_UIM").value;
-    var query3 = document.getElementById("StartingFromUIM_TO_UIM").value;
-    var query4 = document.getElementById("StartingFromUIM_DL_2_UIM").value;
-    //removing semicolon at the end
-    query1 = query1.slice(0,-1);
-    query2 = query2.slice(0,-1);
-    query3 = query3.slice(0,-1);
-    query4 = query4.slice(0,-1);
-    //adding the tipology filter
-    query1 = query1.concat(" AND tipologia = '" + tipologia + "';")
-    query2 = query2.concat(" AND tipologia = '" + tipologia + "';")
-    query3 = query3.concat(" AND tipologia = '" + tipologia + "';")
-    query4 = query4.concat(" AND tipologia = '" + tipologia + "';")
-    //pasting the final text
-    document.getElementById("StartingFromUIM_UIM_2_DL").value = query1;
-    document.getElementById("StartingFromUIM_FROM_UIM").value = query2;
-    document.getElementById("StartingFromUIM_TO_UIM").value = query3;
-    document.getElementById("StartingFromUIM_DL_2_UIM").value = query4;
+
+    if(tipologia!="") {
+        console.log("not empty!");
+        //assignation
+        var query1 = document.getElementById("StartingFromUIM_UIM_2_DL").value;
+        var query2 = document.getElementById("StartingFromUIM_FROM_UIM").value;
+        var query3 = document.getElementById("StartingFromUIM_TO_UIM").value;
+        var query4 = document.getElementById("StartingFromUIM_DL_2_UIM").value;
+        //removing semicolon at the end
+        query1 = query1.slice(0,-1);
+        query2 = query2.slice(0,-1);
+        query3 = query3.slice(0,-1);
+        query4 = query4.slice(0,-1);
+        //adding the tipology filter
+        query1 = query1.concat(" AND tipologia = '" + tipologia + "';")
+        query2 = query2.concat(" AND tipologia = '" + tipologia + "';")
+        query3 = query3.concat(" AND tipologia = '" + tipologia + "';")
+        query4 = query4.concat(" AND tipologia = '" + tipologia + "';")
+        //pasting the final text
+        document.getElementById("StartingFromUIM_UIM_2_DL").value = query1;
+        document.getElementById("StartingFromUIM_FROM_UIM").value = query2;
+        document.getElementById("StartingFromUIM_TO_UIM").value = query3;
+        document.getElementById("StartingFromUIM_DL_2_UIM").value = query4;
+    };
 }
 
 // Single column to array
