@@ -17,6 +17,7 @@
   from { opacity: 0;}
   to {opacity: 1;}
 } */
+/* https://paletton.com/#uid=53u2k0kfBZg1j+Z9w+mkGXdppSu */
 #myPic {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -25,19 +26,45 @@ body {
   background:	#87CFFA;
   margin-top: 50px;
 }
-
+hr {
+  margin-bottom: 10px;
+}
 h1 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h5 {
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 p {
   color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+li {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 span {
   color: #87CEFA;
 }
 .strongColor {
+  color: black;
+  font-size: 20px;
+  /* text-shadow: 1px 1px; */
+}
+#myCurrentAge {
   color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .picContainer {
@@ -63,6 +90,9 @@ span {
   overflow-x: hidden;
   padding-top: 10px;
 }
+.card {
+  border: 0px;
+}
 
 /* The navigation menu links */
 .sidenav a {
@@ -73,15 +103,32 @@ span {
   display: block;
   transition: 0.3s;
 }
-#downCV {
+#info {
   position: absolute;
   bottom: 5px;
+  font-size: 10px;
+  color: grey;
+  right: 0px;
+  left: 0px;
+}
+#downCV {
+  position: absolute;
+  bottom: 25px;
   font-size: 16px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #FFCB35;/* #f1f1f1;*/
+}
+.card-header {
+  background: #3aa6e6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-header:hover {
+  background: #FFCB35;/* #f1f1f1;*/
 }
 
 

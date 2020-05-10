@@ -1,6 +1,14 @@
 /* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+document.addEventListener('DOMContentLoaded', function() {
+  getMyAge();
+}, false);
+
+
+function getMyAge() {
+  datetimeToday = new Date().getFullYear();
+  datetimeBirth = 1992;
+  diff = datetimeToday-datetimeBirth;
+  document.getElementById("myCurrentAge").textContent = diff;
 }
 
 /* Set the width of the side navigation to 0 */
