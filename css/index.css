@@ -70,6 +70,11 @@ span {
   display: block;
   transition: 0.3s;
 }
+#downCV {
+  position: absolute;
+  bottom: 5px;
+  font-size: 16px;
+}
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
