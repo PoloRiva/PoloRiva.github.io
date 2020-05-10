@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO: add another TODO highlight to separate code as br like "BREAKPOINT:" that has the "isWholeLine" equal to true -->
-<!-- TODO: export all awesome vectorial icons to png icons (50x50 for 1:1) to be able to use then without importing all of font awesome libraries -->
 <!-- FIXME: Collapse is laggy when the collapsing element has padding, to improve this make a div parent element as the one who collaspe without the padding tag -->
-<!-- FIXME: consider to user glyphicon icons from Bootstrap instead of FontAwesome ones-->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,18 +35,16 @@
     <a id="info" class="nav-link disabled" href="#"><center>last update: 2020-May-10</center></a>
     </div>
 
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main" style="margin-left: 160px;">
         <div class="container-fluid" style="margin: 0;">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="container">
                         <img id="myPic" class="img-fluid rounded border border-dark" src="./pic/profilePolo10-11-2019_crop_compress.jpg" width="640">
-                        <div class="bottom-center">Paolo Riva</div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h4>Paolo Francesco Riva Riquelme</h4>
+                    <h4 style="margin-bottom: 15px; margin-top: 15px;">Paolo Francesco Riva Riquelme</h4>
                     <h4>Chemical engineer / Developer</h4>
                     <h4><span id="myCurrentAge"> </span> years old</h4>
                     <h4>Milan, Italy</h4>
@@ -59,44 +54,92 @@
                 </div>
             </div>
             <hr>
-            <div class="row" style="padding: 10px;">
-                <h2>Skills</h2><br>
-            </div>
-            <div class="row" style="padding-left: 10px; padding-right: 10px;">
-
-                <div class="accordion rounded" id="accordionSkills">
-                    <div class="card">
-                        <div class="card-header rounded border border-dark" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <h5>Chemical Engineering Skills</h5>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSkills" style="margin-top: 1px;">
-                            <div class="card-body" style="background: #B6E3FD; margin: 0px; padding: 1px; padding-bottom: 5px;">
-                                <ul class="row" style="padding-top: 10px; margin-bottom: 0px;padding-left: 20px;padding-right: 20px;">
-                                    <div class="col-12 col-xl-4 col-md-6">
-                                        <li>Steady State Simulations (Pro II, Hysys, UniSim)</li>
-                                        <li>Design and Optimization of Chemical Processes</li>
-                                        <li>PID and Model Predictive Control Systems</li>
+            
+            <h2>Skills</h2>
+            <div class="accordion rounded" id="accordionSkills" style="width=100%;">
+                <div class="card">
+                    <div class="card-header rounded border border-dark" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="margin-bottom: 0.01px;">
+                        <h5 style="margin-bottom: 0px;">Chemical Engineering Skills</h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSkills">
+                        <div class="card-body">
+                            <ul class="row" style="padding-top: 5px; margin-bottom: 0px;">
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>Steady State Simulations (Pro II, Hysys, UniSim)</li>
+                                    <li>Design and Optimization of Chemical Processes</li>
+                                    <li>PID and Model Predictive Control Systems</li>
+                                </div>
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>Dynamic Simulations (DynSim)</li>
+                                    <li>P&ID and PFDs</li>
+                                    <li>Economic Assessment of Processes</li>
+                                </div>
+                                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                                    <div class="col-12 col-xl-12 col-md-6">
+                                        <li>CFD Simulations (ANSYS Fluent)</li>
+                                        <li>Statics, DoE and Data Analysis</li>
                                     </div>
-                                    <div class="col-12 col-xl-4 col-md-6">
-                                        <li>Dynamic Simulations (DynSim)</li>
-                                        <li>P&ID and PFDs</li>
-                                        <li>Economic Assessment of Processes</li>
+                                    <div class="col-12 col-xl-12 col-md-6">
+                                        <li>Life Cycle Assessment (openLCA)</li>
                                     </div>
-                                    <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
-                                        <div class="col-12 col-xl-12 col-md-6">
-                                            <li>CFD Simulations (ANSYS Fluent)</li>
-                                            <li>Statics, DoE and Data Analysis</li>
-                                        </div>
-                                        <div class="col-12 col-xl-12 col-md-6">
-                                            <li>Life Cycle Assessment (openLCA)</li>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
+                <div class="card">
+                        <div class="card-header rounded border border-dark shadow" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="margin-bottom: 0.01px;">
+                            <h5 style="margin-bottom: 0px;">Computer Skills</h5>
+                        </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSkills">
+                        <div class="card-body">
+                            <ul class="row" style="padding-top: 5px; margin-bottom: 0px;">
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>Office Suite (Word, Excel, PowerPoint, Visio, Access)</li>
+                                    <li>Programming IDEs (VS Code, MATLAB, Visual Studio, IntelliJ)</li>
+                                    <li>Source Control Management (Git, Github)</li>
+                                </div>
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>Programming Knowledge (Python, MATLAB, Java, C++)</li>
+                                    <li>SQL, PL/SQL and Database Design (SQLite3, Oracle SQL)</li>
+                                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                                </div>
+                                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                                    <div class="col-12 col-xl-12 col-md-6">
+                                        <li>Digital Media Editor (Adobe CS: Photoshop, After Effect, Premiere, Illustrator)</li>
+                                    </div>
+                                    <div class="col-12 col-xl-12 col-md-6">
+                                        <li>3D Modeling (AutoCAD)</li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header rounded border border-dark" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="margin-bottom: 0.01px;">
+                        <h5>Laboratory Skills</h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSkills">
+                        <div class="card-body">
+                            <ul class="row" style="padding-top: 5px; margin-bottom: 0px;">
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>ASTM Standardized Tests</li>
+                                </div>
+                                <div class="col-12 col-xl-4 col-md-6">
+                                    <li>Product Formulation</li>
+                                </div>
+                                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                                    <div class="col-12 col-xl-12 col-md-6">
+                                        <li>NMR</li>
+                                    </div>
+                                        <div class="col-12 col-xl-12 col-md-6">
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

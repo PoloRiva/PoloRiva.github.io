@@ -126,9 +126,14 @@ span {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .card-header:hover {
-  background: #FFCB35;/* #f1f1f1;*/
+  background: #FFCB35;
+}
+.card-body {
+  background: #B6E3FD;
+  margin: 0px;
+  padding: 1px;
+  padding-bottom: 5px;
 }
 
 
