@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<!-- TODO: add another TODO highlight to separate code as br like "BREAKPOINT:" that has the "isWholeLine" equal to true -->
+<!-- TODO: export all awesome vectorial icons to png icons (50x50 for 1:1) to be able to use then without importing all of font awesome libraries -->
+<!-- FIXME: Collapse is laggy when the collapsing element has padding, to improve this make a div parent element as the one who collaspe without the padding tag -->
+<!-- FIXME: consider to user glyphicon icons from Bootstrap instead of FontAwesome ones-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="Paolo, Paolo Riva, Paolo Francesco Riva Riquelme">
+<title>Paolo Riva</title>
+<!-- TODO: store all CDN locally so the page works even if the CDN servers is slow/offline -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="./css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/index.css">
+<script defer src="./js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script defer src="js/index.js"></script>
+
+</head>
+<body>
+
+<!-- ------------------------------------------------------------------- -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./pic/arrow-alt-circle-up-solid.png" alt="" style="width: 35px;"></button>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- TODO: finish this modal to show when the submit button in the ContactMe section is pressed -->
+<!-- FIXME: the message need some formatting | also some padding or marging -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="position: relative; top: 50%; transform: translateY(-50%);">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="padding: 10px;">
+                <h4 style="text-align: center;">Message sent</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TODO: Add quick reaction video (Beautiful Chemistry) as bg | research the best way to compress video for web content -->
+<h1 id="AboutMe" style="text-align: center; padding: 20px;">Paolo Francesco Riva Riquelme</h1>
+
+<!-- ------------------------------------------------------------------- -->
+<nav id="navbar" class="navbar sticky-top navbar-expand navbar-light border border-dark shadow" style="padding: 0;">
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#AboutMe"><i class="fas fa-user"></i> About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#ContactMe"><i class="fas fa-pencil-alt"></i> Contact me</a>
+            </li>
+            <li class="nav-item ml-auto disabled">
+                <a class="nav-link disabled" href="#"><i class="fas fa-lightbulb"></i> Projects</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- TODO: add the current work + last education (maybe) | like a quick presentation style -->
+<!-- TODO: change to a more engineer/professional/clean picture -->
+<!-- FIXME: fix the distribution of the columns part of the About Me part | it doesnt shows correctly on cellphone -->
+<!-- TODO: add an external container-fluid that's empty until the screen is LARGE or EXTRALARGE using the offset & hidden clases for columns-->
+<!-- FIXME: fix that every list shows 2x-1x length columns when the screen is medium size -->
+<div class="container-fluid" style="padding: 10px;">
+    <div class="rounded border border-dark" style="background-color: #e3f2fd; padding: 10px;">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-lg-5 col-md-6">
+                <div class="card shadow border border-dark col-centered" style="text-align: center; padding: 10px; max-width: 300px;">
+                    <img class="rounded border border-dark" src="./pic/profilePolo10-11-2019_crop.jpg" alt="John" style="width: 100%;">
+                    <br>
+                    <table class="table" style="margin-bottom: 0;">
+                        <tbody>
+                            <tr>
+                                <td><b>NAME</b></td>
+                                <td>Paolo Francesco Riva Riquelme</td>
+                            </tr>
+                            <tr>
+                                <td><b>AGE</b></td>
+                                <td id="myAgeValue"></td>
+                            </tr>
+                            <tr>
+                                <td><b>LOCATION</b></td>
+                                <td>Milan, Italy</td>
+                            </tr>
+                            <tr>
+                                <td><b>EXPERIENCE</b></td>
+                                <!-- FIXME: make the years of experience update automatically -->
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td><b>DEGREE</b></td>
+                                <td>B.Sc. Chemical Civil Engineer  (6 years)<br>M.Sc. Chemical Engineer (2 years)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 col-xl-9 col-lg-7 col-md-6">
+                <br>
+                <h5 class="text-justify" style="margin-left: .5em; margin-right: .5em;">Master's student in chemical engineering at Politecnico di Milano, tech enthusiast, computer savvy.</h5>
+                <h5 class="text-justify" style="margin-left: .5em; margin-right: .5em;">I consider myself a truthful, open minded and highly versatile person with a great disposition to take modern challenges and work in a team.</h5>
+            </div>
+        </div>
+        <div>
+            <!-- INFO: This is linked to the navigation bar href -->
+            <span id="Resume"></span>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------- -->
+<h1 style="text-align: center;">Resume</h1>
+<hr>
+<div class="container-fluid" style="padding: 10px;">
+    <h2>Skills</h2>
+    <div class="accordion rounded" id="accordionSkills">
+        <div class="card">
+            <div class="card-header rounded border border-dark" style="background: white; cursor: pointer;" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Chemical Engineering Skills</h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSkills">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 0; padding-bottom: 5px;">
+                    <ul class="row" style="padding-top: 10px; margin-bottom: 0px;">
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Steady State Simulations (Pro II, Hysys, UniSim)</li>
+                            <li>Design and Optimization of Chemical Processes</li>
+                            <li>PID and Model Predictive Control Systems</li>
+                        </div>
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Dynamic Simulations (DynSim)</li>
+                            <li>P&ID and PFDs</li>
+                            <li>Economic Assessment of Processes</li>
+                        </div>
+                        <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>CFD Simulations (ANSYS Fluent)</li>
+                                <li>Statics, DoE and Data Analysis</li>
+                            </div>
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>Life Cycle Assessment (openLCA)</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+                <div class="card-header rounded border border-dark shadow" style="background: white; cursor: pointer;" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <h5>Computer Skills</h5>
+                </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSkills">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 0; padding-bottom: 5px;">
+                    <ul class="row" style="padding-top: 10px; margin-bottom: 0px;">
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Office Suite (Word, Excel, PowerPoint, Visio, Access)</li>
+                            <li>Programming IDEs (VS Code, MATLAB, Visual Studio, IntelliJ)</li>
+                            <li>Source Control Management (Git, Github)</li>
+                        </div>
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Programming Knowledge (MATLAB, C++, Java, JavaScript)</li>
+                            <li>Database management (Oracle Database, SQL, PL/SQL)</li>
+                            <li>Web Development (HTML, CSS, JavaScript)</li>
+                        </div>
+                        <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>Digital Media Editor (Adobe CS: Photoshop, After Effect, Premiere, Illustrator)</li>
+                            </div>
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>3D Modeling (AutoCAD)</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card"  style="padding-bottom: 1px;">
+            <div class="card-header rounded border border-dark" style="background: white; cursor: pointer;" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <h5>Laboratory Skills</h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSkills">
+                <div class="card-body" style="background: #e3f2fd; margin: 1px; padding: 0; padding-bottom: 5px;">
+                    <!-- TODO: add a background image (maybe) -->
+                    <ul class="row" style="padding-top: 10px; margin-bottom: 0px;">
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>ASTM Standardized Tests</li>
+                        </div>
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Product Formulation</li>
+                        </div>
+                        <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>NMR</li>
+                            </div>
+                            <div class="col-12 col-xl-12 col-md-6">
+                                
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div
+><!-- ------------------------------------------------------------------- -->
+<hr>
+<div class="container-fluid" style="padding: 10px;">
+    <h2>Education</h2>
+    <div class="bg-white border-top border-left border-right border-dark rounded-top" style="cursor: pointer;">
+        <div class="row" style="margin: 0 auto;" data-toggle="collapse" href="#PolimiCollapse">
+            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
+                <img src="pic/Logo_Politecnico_Milano.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
+                <h3 style="padding-left: 10px;">Politecnico di Milano</h3>
+                <h4 style="padding-left: 10px;">M.Sc. in Chemical Engineering</h4>
+                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Study of the kinetics for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts"</i></h6>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
+                <h6>September 2017 - April 2020</h6>
+                <h6>Milan, Italy</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small" data-toggle="collapse" href="#PolimiCollapse">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse container-fluid border" id="PolimiCollapse" style="background: #e3f2fd;">
+        <h6><u>Courses</u>:</h6>
+        <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 5px;">
+            <ul class="row" style="padding-top: 0px;">
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Process Systems Engineering</li>
+                    <li>Advance Mathematical Analysis</li>
+                    <li>Mechanics of Solids and Structures II</li>
+                    <li>Chemical Plants II</li>
+                    <li>Principles of Polymer Chemistry</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Dynamics and Control of Chemical Processes</li>
+                    <li>Chemical Reaction Engineering</li>
+                    <li>Applied Chemical Kinetics</li>
+                    <li>Principles of Polymer Chemistry</li>
+                    <li>Computational Fluid Dynamics of Reactive Flows</li>
+                </div>
+                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Process Control and Instrumentation Laboratory</li>
+                        <li>Applied Mechanics</li>
+                        <li>Formulation Technology</li>
+                    </div>
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Industrial Organic Chemistry</li>
+                        <li>Chemical and Materials for Energy and Enviroment</li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- FIXME: try to modify the shadow property in "style" to show a shadow at the bottom but not seen between the Polimi card -->
+    <div class="bg-white border-bottom border-left border-right border-dark rounded-bottom" style="cursor: pointer; padding-top: 0; box-shadow: 0px 7px 8px #999999;">
+        <div class="row" style="margin: 0 auto;" data-toggle="collapse" href="#UdeCCollapse">
+            <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
+                <img src="pic/Logo_UdeC.png" style="margin-left: -10px; max-height: 135px; padding: 5px;">
+            </div>
+            <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
+                <h3 style="padding-left: 10px;">Universidad de Concepción</h3>
+                <h4 style="padding-left: 10px;">B.Sc. in Chemical Civil Engineering</h4>
+                <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Polyurethane intumescent coating formulation based on tannins from Pinus Radiata"</i></h6>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right;">
+                <h6>March 2010 - August 2016</h6>
+                <h6>Concepción, Chile</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small" data-toggle="collapse" href="#UdeCCollapse">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse container-fluid border" id="UdeCCollapse" style="background: #e3f2fd;">
+        <h6><u>Courses</u>:</h6>
+        <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 1px;">
+            <ul class="row" style="padding-top: 0px;">
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Introduction to Physics</li>
+                    <li>Physics I</li>
+                    <li>General Chemistry I</li>
+                    <li>General Chemistry II</li>
+                    <li>Statistics</li>
+                    <li>Mechanics</li>
+                    <li>Organic Chemistry I</li>
+                    <li>Introduction to Environmental Sciences</li>
+                    <li>Heat Transfer</li>
+                    <li>Chemical Reactor Design</li>
+                    <li>Drawing of Chemical Processes</li>
+                    <li>Laboratory of Chemical Processes II</li>
+                    <li>Food Industry Operations</li>
+                    <li>Formulation and Evaluation of Projects</li>
+                    <li>Safe Handling of Hazardous Substances</li>
+                    <li>English I</li>
+                    <li>Modern Administration and Techniques for Prevention and Control of Risk</li>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6">
+                    <li>Introduction to Mathematics</li>
+                    <li>Algebra I</li>
+                    <li>Physics II</li>
+                    <li>Ordinary Differential Equations</li>
+                    <li>Introduction to Chemical Engineering</li>
+                    <li>Numerical Analysis</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Organic Chemistry II</li>
+                    <li>Engineering Communication</li>
+                    <li>Mass Transfer</li>
+                    <li>Italian II</li>
+                    <li>Process Dynamics</li>
+                    <li>Process Control</li>
+                    <li>Project I</li>
+                    <li>Transport Phenomena</li>
+                    <li>Optimization of Processes</li>
+                    <li>Statistical Data Processing and Design of Experiments</li>
+                </div>
+                <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Introduction to Chemistry</li>
+                        <li>Calculus I</li>
+                        <li>Algebra II</li>
+                        <li>Calculus II</li>
+                        <li>Electromagnatism</li>
+                        <li>Thermodynamics</li>
+                        <li>Thermodynamics of Chemical Processes</li>
+                        <li>Physical Chemistry</li>
+                        <li>Italian I</li>
+                    </div>
+                    <div class="col-12 col-xl-12 col-md-6">
+                        <li>Laboratory of Chemical Processes I</li>
+                        <li>Separation Operations</li>
+                        <li>Economy</li>
+                        <li>Process Synthesis</li>
+                        <li>Chemical Process Industries</li>
+                        <li>Business Management</li>
+                        <li>Project II</li>
+                        <li>Legal Aspects of the Company</li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------- -->
+<hr>
+<div id="workExperience" class="container-fluid" style="padding: 10px;">
+    <h2>Work Experience</h2>
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="Accenture" data-toggle="collapse" href="#AccentureCollapse">
+        <div class="row">
+            <div class="col-12 col-sm-6" style="text-align: left;">
+                <h4 style="padding-left: 5px;"><b>Accenture</b></h4>
+                <h4 style="padding-left: 5px;">Technology Trainee</h4>
+            </div>
+            <div class="col-12 col-sm-6" style="text-align: right;">
+                <h6 style="padding-right: 5px;">September 2019 - today</h6>
+                <h6 style="padding-right: 5px;">Milan, Italy</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse" id="AccentureCollapse">
+        <br>
+    </div>
+    <div class="collapse container-fluid rounded border border-dark" id="AccentureCollapse" style="background: #e3f2fd; padding: 10px;">
+        <div class="row">
+                <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
+                    <h6><u>Description</u>:</h6>
+                <h5 class="text-justify" style="margin-left: .5em">The internship consisted of two chapters.<br> First, different technologies were introduced in a classroom environment (Java, database management, web development). Afterward, we were assigned to work on a current project at the firm.</h5>
+            </div>
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
+                <h6><u>Reference</u>:</h6>
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C5603AQEJPPxwRm5izA/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=cm4BZ9IaV89IUJZGoXt3BANmkgpBu8JEWueZZspN0DI" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/Githublogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
+                    <h5>Emanuele Galli</h5>
+                    <h6 style="line-height: 1.5ch;">Senior Software Developer</h6>
+                    <h6 style="line-height: 2ch;">Accenture</h6>
+                    <div class="row">
+                        <div class="col"></div>
+                        <a class="col" href="https://github.com/egalli64"><i class="fab fa-2x fa-github-square blackiconcolor"></i></a>
+                        <a class="col" href="http://www.linkedin.com/in/egalli"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
+                        <a class="col" href="mailto:egalli@gmail.com"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="EnetEnergySA" data-toggle="collapse" href="#EnetEnergySACollapse">
+        <div class="row">
+            <div class="col-12 col-sm-7" style="text-align: left;">
+                <h4 style="padding-left: 5px;"><b>Enet Energy SA</b></h4>
+                <h4 style="padding-left: 5px;">Trainee on quantitative analyst and strategy on natural gas markets</h4>
+            </div>
+            <div class="col-12 col-sm-5" style="text-align: right;">
+                <h6 style="padding-right: 5px;">June 2019 - July 2019</h6>
+                <h6 style="padding-right: 5px;">Lugano, Switzerland</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse" id="EnetEnergySACollapse">
+        <br>
+    </div>
+    <div class="collapse container-fluid rounded border border-dark" id="EnetEnergySACollapse" style="background: #e3f2fd; padding: 10px;">
+        <div class="row">
+            <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
+                <h6><u>Description</u>:</h6>
+                <h5 class="text-justify" style="margin-left: .5em">I was in charge of making software tools to accelerate the workflow inside the office and to make easy the decision making for short and long trading</h5>
+            </div>
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
+                <h6><u>Reference</u>:</h6>
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQEhq8-yu7QcYg/profile-displayphoto-shrink_800_800/0?e=1578528000&v=beta&t=5iyGoRaxutnsefRHJwyCIbItpFFKovFXYIfWszkWL_Q" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
+                    <h5>Roberto Dalla Muta</h5>
+                    <h6 style="line-height: 1.5ch;">Natural Gas Trader</h6>
+                    <h6 style="line-height: 2ch;">Enet Energy SA</h6>
+                    <div class="row">
+                        <div class="col"></div>
+                        <a class="col" href="http://www.linkedin.com/in/katherina-fernandez-elgueta-380b8335"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
+                        <a class="col" href="tel:+41795509427"><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></a>
+                        <a class="col" href="mailto:roberto.dallamuta@gmail.com"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="UdeC2" data-toggle="collapse" href="#UdeC2Collapse">
+        <div class="row">
+            <div class="col-12 col-sm-7" style="text-align: left;">
+                <h4 style="padding-left: 5px;"><b>Universidad de Concepción</b></h4>
+                <h4 style="padding-left: 5px;">Product Formulation Researcher</h4>
+            </div>
+            <div class="col-12 col-sm-5" style="text-align: right;">
+                <h6 style="padding-right: 5px;">November 2016 - March 2017</h6>
+                <h6 style="padding-right: 5px;">Concepción, Chile</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse" id="UdeC2Collapse">
+        <br>
+    </div>
+    <div class="collapse container-fluid rounded border border-dark" id="UdeC2Collapse" style="background: #e3f2fd; padding: 10px;">
+            <div class="row">
+                <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
+                    <h6><u>Description</u>:</h6>
+                <h5 class="text-justify" style="margin-left: .5em;">I was the lead researcher on the formulation of intumescent Polyurethane for different types of applications (paint, foam, spray)</h5>
+            </div>
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
+                <h6><u>Reference</u>:</h6>
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
+                    <h5>Katherina Fernandez</h5>
+                    <h6 style="line-height: 1.5ch;">Associate Professor</h6>
+                    <h6 style="line-height: 2ch;">Universidad de Concepción</h6>
+                    <div class="row">
+                        <div class="col"></div>
+                        <a class="col" href="http://www.linkedin.com/in/katherina-fernandez-elgueta-380b8335"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
+                        <a class="col" href="tel:+56959113912"><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></a>
+                        <a class="col" href="mailto:kfernandeze@udec.cl"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="bg-white shadow rounded border border-dark" style="cursor: pointer;" id="UdeC1" data-toggle="collapse" href="#UdeC1Collapse">
+        <div class="row">
+            <div class="col-12 col-sm-7" style="text-align: left;">
+                <h4 style="padding-left: 5px;"><b>Universidad de Concepción</b></h4>
+                <h4 style="padding-left: 5px;">Undergraduate Research Assistant</h4>
+            </div>
+            <div class="col-12 col-sm-5" style="text-align: right;">
+                <h6 style="padding-right: 5px;">March 2016 - August 2016</h6>
+                <h6 style="padding-right: 5px;">Concepción, Chile</h6>
+            </div>
+        </div>
+        <div class="row justify-content-center small">
+            <i class="fas fa-angle-down small"></i>
+        </div>
+    </div>
+    <div class="collapse" id="UdeC1Collapse">
+        <br>
+    </div>
+    <div class="collapse container-fluid rounded border border-dark" id="UdeC1Collapse" style="background: #e3f2fd; padding: 10px;">
+        <div class="row">
+                <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-xs-6">
+                    <h6><u>Description</u>:</h6>
+                <h5 class="text-justify" style="margin-left: .5em">While working on my thesis for the formulation of intumescent Polyurethane to be applied as paint, I accidentally discovered an easy way to produce Polyurethane to be applied as a foam. My university decided to hire me to work on this project parallel to my thesis work</h5>
+            </div>
+            <div class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-xs-6 col-centered" style="max-width: 350px;">
+                <h6><u>Reference</u>:</h6>
+                <div class="card shadow border border-dark" style="text-align: center; padding: 10px;">
+                    <div style="position: relative; bottom: 0; right: 0;">
+                        <img class="rounded border border-dark" src="https://media.licdn.com/dms/image/C4D03AQE-XmDzt5cJ7Q/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=FtuiipRDacTlGUVGoiugLFZ4P--6BFluAOzX9cBt6Bg" alt="No picture available" style="width: 100%;">
+                        <img src="./pic/LinkedInlogo_small_bg.png" alt="" style="position: absolute; max-width: 30px; bottom: 5px; right: 5px;">
+                    </div>
+                    <h5>Katherina Fernandez</h5>
+                    <h6 style="line-height: 1.5ch;">Associate Professor</h6>
+                    <h6 style="line-height: 2ch;">Universidad de Concepción</h6>
+                    <div class="row">
+                        <div class="col"></div>
+                        <a class="col" href="http://www.linkedin.com/in/katherina-fernandez-elgueta-380b8335"><i class="fab fa-2x fa-linkedin blackiconcolor"></i></a>
+                        <a class="col" href="tel:+56959113912"><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></a>
+                        <a class="col" href="mailto:kfernandeze@udec.cl"><i class="fas fa-2x fa-envelope blackiconcolor"></i></a>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------- -->
+<hr>
+<div class="container-fluid" style="padding: 10px;">
+    <h2>Languages</h2>
+    <div class="bg-white border border-dark shadow rounded" style="padding-left: 10px;">
+        <h4><b>English</b></h4>
+        <ul class="row">
+            <li class="col-12 col-lg-6">Reading and Listening Comprehension - Level C1: TOEIC 950</li>
+            <li class="col-12 col-lg-6">Oral and Written Expression - Level B2<sup>*</sup></li>
+        </ul>
+        <hr style="margin-bottom: 2px; margin-top: 2px;">
+        <h4><b>Italian</b></h4>
+        <ul class="row">
+            <li class="col-12 col-lg-6">Reading and Listening Comprehension - Level B2<sup>*</sup></li>
+            <li class="col-12 col-lg-6">Oral and Written Expression - Level B2<sup>*</sup></li>
+        </ul>
+        <hr style="margin-bottom: 2px; margin-top: 2px;">
+        <h4><b>Spanish</b></h4>
+        <ul class="row" style="margin-bottom: 0px;">
+            <li class="col-10">C1: Native</li>
+        </ul>
+        <div class="row">
+            <h6 class="col" style="text-align: right; padding-right: 20px; margin-bottom: 2px; margin-top: 2px;">*: uncertified</h6>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------- -->
+<!-- TODO: add the rest of documents -->
+<hr>
+<div class="container-fluid" style="padding: 10px;">
+    <h2>Documents</h2>
+    <div class="bg-white border border-dark shadow rounded">
+        <ul class="row" style="margin-bottom: 0;">
+            <div class="col-12 col-xl-4 col-md-6" style="padding: 10px;">
+                <li><h4>Class B Driver's License</h4></li>
+            </div>
+            <div class="col-12 col-xl-4 col-md-6" style="padding: 10px;">
+                <li><h4>Chilean Passport</h4></li>
+            </div>
+            <div class="col-12 col-xl-4 col-md-6" style="padding: 10px;">
+                <li><h4>Italian Passport</h4></li>
+            </div>
+        </ul>
+    </div>
+</div>
+<div style="text-align: center; padding: 10px;">
+    <button id="DownloadBtn" class="btn btn-primary" type="button" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;">
+        <a id="ContactMe" href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV" style="color: white;"><i class="fas fa-file-download whiteiconcolor"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
+    </button>    
+</div>
+<!-- ------------------------------------------------------------------- -->
+<hr>
+<h1 style="text-align: center;">Contact Me</h1>
+<br>
+<div class="container-fluid">
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="col-12 col-lg-5 col-md-7 col-centered">
+            <div class="card shadow border border-dark" style="text-align: center; padding-bottom: 10px;">
+                <!-- INFO: Dear mr. hacker, please dont spam me with infinite messages 🙏 -->
+                <!-- FIXME: the action need to execute a js program that send the post  -->
+                <!-- FIXME: configure bootstrap to collapse on small screens -->
+                <input type="hidden" name="chat_id" value="258936">
+                <input type="hidden" name="parse_mod" value="markdown">
+                <table class="table" style="margin-bottom: 0;">
+                    <tbody>
+                        <tr>
+                            <td><b>Name</b></td>
+                            <td><textarea id="nameTelegram" class="rounded container-fluid" placeholder="" name="name" rows="1" style="max-width: 500px; height: 4ch; padding: 4px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Company</b></td>
+                            <td><textarea id="companyTelegram" class="rounded container-fluid" placeholder="" name="company" rows="1" style="max-width: 500px; height: 4ch; padding: 4px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Message</b></td>
+                            <td><textarea id="textTelegram" class="rounded container-fluid" placeholder="Dear Paolo Riva..." name="text" rows="5" style="max-width: 500px; padding: 4px;"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;" data-toggle="modal">
+                <!-- TODO: add the option to attach documents (maybe) if it doesnt compromise the whole security -->
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-centered" style="text-align: center; padding: 15px;">
+            <div class="card shadow border border-dark" style="text-align: center;">
+                <table class="table" style="margin-bottom: 0;">
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-2x fa-envelope blackiconcolor"></i></td>
+                            <td><a href="mailto:riva.polo@gmail.com">riva.polo@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></td>
+                            <td><a href="tel:+56959113912">(+39) 331 802 3392</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+<!-- TODO: Add links to Linked-in | Github | etc -->
+
+</body>
+</html>
