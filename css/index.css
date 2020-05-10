@@ -36,6 +36,9 @@ p {
 span {
   color: #87CEFA;
 }
+.strongColor {
+  color: white;
+}
 
 .picContainer {
   text-align: center;
