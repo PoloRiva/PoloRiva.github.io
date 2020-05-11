@@ -29,33 +29,34 @@
 <body>
     <div id="mySidenav" class="sidenav">
     <a class="nav-link" href="#AboutMe"><i class="fas fa-user"></i> About me </a>
-    <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Resume</a>
+    <a class="nav-link" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
     <a class="nav-link" href="#"><i class="fas fa-pencil-alt"></i> Contact Me</a>
     <a class="nav-link disabled" href="#"><i class="fas fa-lightbulb"></i>  Projects</a>
     <a id="downCV" class="nav-link" href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV"><i class="fas fa-file-download"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
-    <a id="info" class="nav-link disabled" href="#"><center>last update: 2020-May-10</center></a>
+    <a id="info" class="nav-link disabled" href="#"><center>last update: 2020-May-11</center></a>
     </div>
 
-    <div id="main" style="margin-left: 160px;">
+    <div id="main" style="margin-left: 160px; max-width: 780px;">
         <div class="container-fluid" style="margin: 0;">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="container">
-                        <img id="myPic" class="img-fluid rounded border border-dark" src="./pic/profilePolo10-11-2019_crop_compress.jpg" width="640">
+                    <div class="container" style="text-align: center;">
+                        <img id="myPic" class="img-fluid rounded border border-dark" src="./pic/profilePolo10-11-2019_crop_compress.jpg" style="max-height: 400px;">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h4 style="margin-bottom: 15px; margin-top: 15px;">Paolo Francesco Riva Riquelme</h4>
-                    <h4>Chemical engineer / Developer</h4>
-                    <h4><span id="myCurrentAge"> </span> years old</h4>
-                    <h4>Milan, Italy</h4>
+                    <h4 class="topInfo" style="margin-bottom: 15px; margin-top: 15px;">Paolo Francesco Riva Riquelme</h4>
+                    <h4 class="topInfo" style="color: black">Chemical engineer / Developer</h4>
+                    <h4 class="topInfo"><span id="myCurrentAge"> </span> years old</h4>
+                    <h4 class="topInfo">Milan, Italy</h4>
                     <hr>
                     <h1 id="AboutMe">About me</h1>
                     <p>I consider myself a truthful, open minded and highly versatile person with a great disposition to take modern challenges and work in a team.</p>
                 </div>
             </div>
             <hr>
-            
+            <h1 id="Resume">Resume</h1>
+
             <h2>Skills</h2>
             <div class="accordion rounded" id="accordionSkills" style="width=100%;">
                 <div class="card">
@@ -89,9 +90,9 @@
                     </div>
                 </div>
                 <div class="card">
-                        <div class="card-header rounded border border-dark shadow" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="margin-bottom: 0.01px;">
-                            <h5 style="margin-bottom: 0px;"><i class="fas fa-laptop-code"></i> Computer Skills</h5>
-                        </div>
+                    <div class="card-header rounded border border-dark shadow" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="margin-bottom: 0.01px;">
+                        <h5 style="margin-bottom: 0px;"><i class="fas fa-laptop-code"></i> Computer Skills</h5>
+                    </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSkills">
                         <div class="card-body">
                             <ul class="row" style="padding-top: 5px; margin-bottom: 0px;padding-left: 20px;">
@@ -142,6 +143,61 @@
                     </div>
                 </div>
             </div>
+            <br>
+
+            <h2>Education</h2>
+            <div class="card-header border-top border-left border-right border-dark rounded-top" style="padding: 0px;">
+                <div class="row" data-toggle="collapse" href="#PolimiCollapse">
+                    <div class="col-12 col-xl-1 col-lg-2 col-md-12 text-center">
+                        <img src="pic/Logo_Politecnico_Milano.png" style="max-height: 135px; padding: 8px;">
+                    </div>
+                    <div class="col-12 col-xl-8 col-lg-7 col-md-8" style="text-align: left;">
+                        <h3 style="padding-left: 10px;">Politecnico di Milano</h3>
+                        <h4 style="padding-left: 10px; color: black;">M.Sc. in Chemical Engineering</h4>
+                        <h6 style="padding-left: 10px;"><u>Thesis</u>:<i>"Study of the kinetic model and plant steady-state simulation for the synthesis of methanol from syngas on synthetic Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalyst"</i></h6>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-4" style="text-align: right; padding-right: 25px;">
+                        <h6>September 2017 - April 2020</h6>
+                        <h6>Milan, Italy</h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center small" data-toggle="collapse" href="#PolimiCollapse">
+                    <i class="fas fa-angle-down small"></i>
+                </div>
+            </div>
+            <div class="collapse container-fluid" id="PolimiCollapse" style="background: #B6E3FD;">
+                <h6><u>Courses</u>:</h6>
+                <div class="card-body" style="margin: 1px; padding: 0; padding-bottom: 5px;">
+                    <ul class="row" style="padding: 0px; margin-bottom: 0px; padding-left: 5px">
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Process Systems Engineering</li>
+                            <li>Advance Mathematical Analysis</li>
+                            <li>Mechanics of Solids and Structures II</li>
+                            <li>Chemical Plants II</li>
+                            <li>Principles of Polymer Chemistry</li>
+                        </div>
+                        <div class="col-12 col-xl-4 col-md-6">
+                            <li>Dynamics and Control of Chemical Processes</li>
+                            <li>Chemical Reaction Engineering</li>
+                            <li>Applied Chemical Kinetics</li>
+                            <li>Principles of Polymer Chemistry</li>
+                            <li>Computational Fluid Dynamics of Reactive Flows</li>
+                        </div>
+                        <div class="row container-fluid col-xl-4" style="margin: 0 auto; padding: 0;">
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>Process Control and Instrumentation Laboratory</li>
+                                <li>Applied Mechanics</li>
+                                <li>Formulation Technology</li>
+                            </div>
+                            <div class="col-12 col-xl-12 col-md-6">
+                                <li>Industrial Organic Chemistry</li>
+                                <li>Chemical and Materials for Energy and Enviroment</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
     <br><br><br><br><br><br><br><br>
