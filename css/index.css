@@ -80,11 +80,10 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
- 
-/* The sidenav */
+
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 30%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -97,12 +96,11 @@ span {
   border: 0px;
 }
 
-/* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #87CEFA; /*#3CB371; #818181;*/
+  color: #87CEFA;
   display: block;
   transition: 0.3s;
 }
@@ -115,6 +113,9 @@ span {
   left: 0px;
 }
 #downCV {
+  left: 0;
+  right: 0;
+  margin: auto;
   position: absolute;
   bottom: 25px;
   font-size: 16px;
@@ -139,10 +140,10 @@ span {
   padding-bottom: 5px;
 }
 
-
 /* Page content */
-.main {
-  margin-left: 150px; /* Same as the width of the sidenav */
+#main {
+  margin-left: 30%;
+  max-width: 780px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
