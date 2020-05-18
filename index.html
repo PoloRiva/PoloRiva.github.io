@@ -32,10 +32,10 @@
     <div class="sidenav bgDeep" style="text-align: center;">
     <a class="nav-link hoverAccent" href="#AboutMe"><i class="fas fa-user"></i> About me </a>
     <a class="nav-link hoverAccent" href="#Resume"><i class="fas fa-file-alt"></i> Resume</a>
-    <a class="nav-link hoverAccent" href="#"><i class="fas fa-pencil-alt"></i> Contact Me</a>
+    <a class="nav-link hoverAccent" href="#ContactMe"><i class="fas fa-pencil-alt"></i> Contact Me</a>
     <a class="nav-link disabled" href="#"><i class="fas fa-lightbulb"></i>  Projects</a>
     <a id="downCV" class="nav-link hoverAccent" href="./docs/CV.pdf" target="_blank" download="Paolo Francesco Riva Riquelme - CV"><i class="fas fa-file-download"></i> Download CV <sup><i class="fas fa-external-link-alt"></i></sup></a>
-    <a id="info" class="nav-link disabled" href="#"><center>last update: 2020-May-15</center></a>
+    <a id="info" class="nav-link disabled" href="#">last update: 2020-May-15</a>
     </div>
 
     <div id="main">
@@ -570,6 +570,50 @@
                         <li><h4>Italian Passport</h4></li>
                     </div>
                 </ul>
+            </div>
+            <br>
+            <hr>
+
+            <h1 id="ContactMe">Contact Me</h1>
+            <div style="text-align: center; padding: 15px; margin: auto; max-width: 350px;">
+                <div class="card shadow border border-dark" style="text-align: center;">
+                    <table class="table" style="margin-bottom: 0;">
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-2x fa-envelope blackiconcolor"></i></td>
+                                <td><a href="mailto:riva.polo@gmail.com">riva.polo@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-2x fa-phone-square-alt blackiconcolor"></i></td>
+                                <td><a href="tel:+56959113912">(+39) 331 802 3392</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+
+            <div class="card shadow border border-dark" style="text-align: center; padding-bottom: 10px; margin: auto; max-width: 550px;">
+                <!-- INFO: Dear mr. hacker, please dont spam me with infinite messages 🙏 -->
+                <input type="hidden" name="chat_id" value="258936">
+                <input type="hidden" name="parse_mod" value="markdown">
+                <table class="table" style="margin-bottom: 0;">
+                    <tbody> <p style="text-align: left; padding-left: 10px; margin-bottom: 0px; color: black;">Quick message</p>
+                        <tr>
+                            <td><b>Name</b></td>
+                            <td><textarea id="nameTelegram" class="rounded container-fluid" placeholder="" name="name" rows="1" style="max-width: 500px; height: 4ch; padding: 4px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Company</b></td>
+                            <td><textarea id="companyTelegram" class="rounded container-fluid" placeholder="" name="company" rows="1" style="max-width: 500px; height: 4ch; padding: 4px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><b>Message</b></td>
+                            <td><textarea id="textTelegram" class="rounded container-fluid" placeholder="Dear Paolo Riva..." name="text" rows="5" style="max-width: 500px; padding: 4px;"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input  id="telegramButton" onclick="sendTelegramPOST()" type="submit" value="Submit" style="margin: 0 auto;" data-toggle="modal">
             </div>
 
 

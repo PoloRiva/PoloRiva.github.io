@@ -11,3 +11,26 @@ function getMyAge() {
   document.getElementById("myCurrentAge").textContent = diff;
   document.getElementById("myCurrentAge").style = "color:black";
 }
+
+function sendTelegramPOST() {
+  var nameTelegram = document.getElementById("nameTelegram").value;
+  var companyTelegram = document.getElementById("companyTelegram").value;
+  var textTelegram = document.getElementById("textTelegram").value;
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://api.telegram.org/bot1058992317:AAHy2ExAPseR-kqVoKTqebLvmg8SCTfxaTI/sendMessage", true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+  chat_id: "258936",
+  parse_mod: "markdown",
+  text: "name: " + nameTelegram + "\ncompany: " + companyTelegram + "\n\n" + textTelegram
+  }));
+  document.getElementById("nameTelegram").value = "";
+  document.getElementById("companyTelegram").value = "";
+  document.getElementById("textTelegram").value = "";
+  // TODO: Add a cool modal giving greatings and confirming that the message has been send
+  $("#myModal").modal();
+  setTimeout(function() {
+    $("#myModal").modal("hide");
+  }, 1500);
+  // TODO: disable the submit button for 5 seconds after clicking
+};
