@@ -29,6 +29,9 @@
 .bgLight {
   background-color: #B6E3FD;
 }
+.accentColor {
+  color: #FFCB35;
+}
 .hoverAccent:hover  {
   cursor: pointer;
   color: #FFCB35;
