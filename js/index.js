@@ -1,8 +1,6 @@
-/* Set the width of the side navigation to 250px */
 document.addEventListener('DOMContentLoaded', function() {
   getMyAge();
 }, false);
-
 
 function getMyAge() {
   datetimeToday = new Date().getFullYear();
