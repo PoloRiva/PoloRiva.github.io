@@ -18,28 +18,38 @@
 } */
 /* https://paletton.com/#uid=53u2k0kfBZg1j+Z9w+mkGXdppSu */
 .bgDeep {
+  /* background-color: #111; */
   background-color: #111;
 }
 .bgHeavy {
-  background-color: #3aa6e6;
+  /* background-color: #3aa6e6; */
+  background-color: #111;
 }
 .bgMedium {
-  background-color: #87CFFA;
+  /* background-color: #87CFFA; */
+  background-color: #91C8F2;
+}
+.bgReferences {
+  background-color: #92E5D4;
 }
 .bgLight {
-  background-color: #B6E3FD;
+  /* background-color: #B6E3FD; */
+  background-color: #F9DE93;
 }
 .accentColor {
-  color: #FFCB35;
+  /* color: #FFCB35; */
+  color: #e76f51;
 }
 .hoverAccent:hover  {
   cursor: pointer;
-  color: #FFCB35;
+  /* color: #FFCB35; */
+  color: #e76f51;
   transition: 0.2s;
 }
 .hoverbgAccent:hover  {
   cursor: pointer;
-  background-color: #FFCB35;
+  /* background-color: #FFCB35; */
+  background-color: #e76f51;
   transition: 0.2s;
 }
 .blackiconcolor {
@@ -53,28 +63,41 @@ hr {
   margin-bottom: 10px;
 }
 h1 {
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Armata';
   text-align: center;
 }
 h2 {
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Armata';
+}
+h3 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Armata';
 }
 h4 {
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Armata';
 }
 h5 {
+  color: white;
+  font-family: 'Armata';
+}
+h6 {
   color: white;
 }
 p {
   color: white;
+  font-family: 'Armata';
   font-size: 20px;
 }
 li {
-  color: black;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Armata';
 }
 span {
   color: #87CEFA;
@@ -114,7 +137,7 @@ span {
   padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #87CEFA;
+  color: white;
   display: block;
 }
 #info {
