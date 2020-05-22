@@ -16,7 +16,9 @@
   from { opacity: 0;}
   to {opacity: 1;}
 } */
-/* https://paletton.com/#uid=53u2k0kfBZg1j+Z9w+mkGXdppSu */
+/*TODO: select fonts: https://www.w3schools.com/howto/howto_google_fonts.asp */
+/* https://coolors.co/e2e2df-d2d2cf-e2cfc4-f7d9c4-faedcb-c9e4de-c6def1-dbcdf0-f2c6de-f9c6c9 */
+/* https://coolors.co/e5e5a5-d6d698-e5b191-f7bb8e-f9de93-92e5d4-91c8f2-bb97f2-f293c9-f9939c */
 .bgDeep {
   /* background-color: #111; */
   background-color: #111;
@@ -55,6 +57,15 @@
 .blackiconcolor {
   color: black;
 }
+.btnContactsMe {
+  color: white;
+}
+.btnContactsMe:hover {
+  cursor: pointer;
+  /* background-color: #FFCB35; */
+  color: #e76f51;
+  transition: 0.2s;
+}
 
 #myPic {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -89,6 +100,7 @@ h5 {
 }
 h6 {
   color: white;
+  font-family: 'Armata';
 }
 p {
   color: white;
