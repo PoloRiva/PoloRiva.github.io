@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   getMyAge();
+  alertNewView();
 }, false);
 
 function getMyAge() {
@@ -32,3 +33,14 @@ function sendTelegramPOST() {
   }, 1500);
   // TODO: disable the submit button for 5 seconds after clicking
 };
+
+function alertNewView() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://api.telegram.org/bot1058992317:AAHy2ExAPseR-kqVoKTqebLvmg8SCTfxaTI/sendMessage", true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+  chat_id: "258936",
+  parse_mod: "markdown",
+  text: "New visitor"
+  }));
+}
