@@ -26,11 +26,10 @@ function sendTelegramPOST() {
   document.getElementById("nameTelegram").value = "";
   document.getElementById("companyTelegram").value = "";
   document.getElementById("textTelegram").value = "";
-  // TODO: Add a cool modal giving greatings and confirming that the message has been send
   $("#myModal").modal();
   setTimeout(function() {
     $("#myModal").modal("hide");
-  }, 1500);
+  }, 2000);
   // TODO: disable the submit button for 5 seconds after clicking
 };
 
@@ -42,5 +41,16 @@ function alertNewView() {
   chat_id: "258936",
   parse_mod: "markdown",
   text: "New visitor"
+  }));
+}
+
+function alertNewDownload() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://api.telegram.org/bot1058992317:AAHy2ExAPseR-kqVoKTqebLvmg8SCTfxaTI/sendMessage", true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+  chat_id: "258936",
+  parse_mod: "markdown",
+  text: "CV viewed"
   }));
 }
